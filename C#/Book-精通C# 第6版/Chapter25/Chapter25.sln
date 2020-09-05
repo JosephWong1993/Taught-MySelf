@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicEightBallServiceLib", "MagicEightBallServiceLib\MagicEightBallServiceLib.csproj", "{3FFA34CF-7FE1-4349-BDB3-160571634E41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicEightBallServiceHost", "MagicEightBallServiceHost\MagicEightBallServiceHost.csproj", "{4BD6C56B-13D7-405D-AA7B-11135512327B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicEightBallServiceClient", "MagicEightBallServiceClient\MagicEightBallServiceClient.csproj", "{1D13333D-E903-4FB1-B801-0D6DBA6560CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathServiceLibrary", "MathServiceLibrary\MathServiceLibrary.csproj", "{80127322-B2B5-4293-91F8-CD63ECD8A001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathWindowsServiceHost", "MathWindowsServiceHost\MathWindowsServiceHost.csproj", "{817008EF-5DAB-40EB-9EAD-2F0203FAD2CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathClient", "MathClient\MathClient.csproj", "{CB7E2357-97C6-474D-9C9C-8F75583D71F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FFA34CF-7FE1-4349-BDB3-160571634E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FFA34CF-7FE1-4349-BDB3-160571634E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FFA34CF-7FE1-4349-BDB3-160571634E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FFA34CF-7FE1-4349-BDB3-160571634E41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BD6C56B-13D7-405D-AA7B-11135512327B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BD6C56B-13D7-405D-AA7B-11135512327B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BD6C56B-13D7-405D-AA7B-11135512327B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BD6C56B-13D7-405D-AA7B-11135512327B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D13333D-E903-4FB1-B801-0D6DBA6560CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D13333D-E903-4FB1-B801-0D6DBA6560CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D13333D-E903-4FB1-B801-0D6DBA6560CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D13333D-E903-4FB1-B801-0D6DBA6560CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80127322-B2B5-4293-91F8-CD63ECD8A001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80127322-B2B5-4293-91F8-CD63ECD8A001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80127322-B2B5-4293-91F8-CD63ECD8A001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80127322-B2B5-4293-91F8-CD63ECD8A001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{817008EF-5DAB-40EB-9EAD-2F0203FAD2CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{817008EF-5DAB-40EB-9EAD-2F0203FAD2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{817008EF-5DAB-40EB-9EAD-2F0203FAD2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{817008EF-5DAB-40EB-9EAD-2F0203FAD2CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB7E2357-97C6-474D-9C9C-8F75583D71F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB7E2357-97C6-474D-9C9C-8F75583D71F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB7E2357-97C6-474D-9C9C-8F75583D71F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB7E2357-97C6-474D-9C9C-8F75583D71F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B955F79D-6660-461B-931A-877F2AA52749}
+	EndGlobalSection
+EndGlobal

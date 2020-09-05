@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyConnectionFactory", "MyConnectionFactory\MyConnectionFactory.csproj", "{E5689DE7-9904-4343-B98B-476C06C20446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProviderFactory", "DataProviderFactory\DataProviderFactory.csproj", "{3DD301B5-7E21-458F-B204-94F134515119}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLotDataReader", "AutoLotDataReader\AutoLotDataReader.csproj", "{10EBBE4F-F902-4B0A-AE6F-5E369D23F41B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLotDAL", "AutoLotDAL\AutoLotDAL.csproj", "{F8162E18-DDD6-4FA3-BF32-FEC4902D02B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLotCUIclient", "AutoLotCUIclient\AutoLotCUIclient.csproj", "{4B59F230-84E4-47EF-BFC9-3B88A4570630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetTransaction", "AdoNetTransaction\AdoNetTransaction.csproj", "{3E9179B0-0223-4070-9B70-E3037FF6F9BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5689DE7-9904-4343-B98B-476C06C20446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5689DE7-9904-4343-B98B-476C06C20446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5689DE7-9904-4343-B98B-476C06C20446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5689DE7-9904-4343-B98B-476C06C20446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD301B5-7E21-458F-B204-94F134515119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD301B5-7E21-458F-B204-94F134515119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD301B5-7E21-458F-B204-94F134515119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD301B5-7E21-458F-B204-94F134515119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10EBBE4F-F902-4B0A-AE6F-5E369D23F41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10EBBE4F-F902-4B0A-AE6F-5E369D23F41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10EBBE4F-F902-4B0A-AE6F-5E369D23F41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10EBBE4F-F902-4B0A-AE6F-5E369D23F41B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8162E18-DDD6-4FA3-BF32-FEC4902D02B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8162E18-DDD6-4FA3-BF32-FEC4902D02B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8162E18-DDD6-4FA3-BF32-FEC4902D02B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8162E18-DDD6-4FA3-BF32-FEC4902D02B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B59F230-84E4-47EF-BFC9-3B88A4570630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B59F230-84E4-47EF-BFC9-3B88A4570630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B59F230-84E4-47EF-BFC9-3B88A4570630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B59F230-84E4-47EF-BFC9-3B88A4570630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E9179B0-0223-4070-9B70-E3037FF6F9BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9179B0-0223-4070-9B70-E3037FF6F9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9179B0-0223-4070-9B70-E3037FF6F9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9179B0-0223-4070-9B70-E3037FF6F9BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

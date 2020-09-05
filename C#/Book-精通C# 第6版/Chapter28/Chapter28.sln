@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWordPad", "MyWordPad\MyWordPad.csproj", "{5F27642C-5E55-477D-8614-D8E338C52FFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlsAndAPI", "WpfControlsAndAPI\WpfControlsAndAPI.csproj", "{9A252624-DAF3-40BD-8502-AE06D1C20E9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLotDAL(Version Four)", "AutoLotDAL(Version Four)\AutoLotDAL(Version Four).csproj", "{F8162E18-DDD6-4FA3-BF32-FEC4902D02B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F27642C-5E55-477D-8614-D8E338C52FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F27642C-5E55-477D-8614-D8E338C52FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F27642C-5E55-477D-8614-D8E338C52FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F27642C-5E55-477D-8614-D8E338C52FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A252624-DAF3-40BD-8502-AE06D1C20E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A252624-DAF3-40BD-8502-AE06D1C20E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A252624-DAF3-40BD-8502-AE06D1C20E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A252624-DAF3-40BD-8502-AE06D1C20E9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8162E18-DDD6-4FA3-BF32-FEC4902D02B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8162E18-DDD6-4FA3-BF32-FEC4902D02B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8162E18-DDD6-4FA3-BF32-FEC4902D02B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8162E18-DDD6-4FA3-BF32-FEC4902D02B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC772780-BDF3-48B5-BB4A-0897A7B85427}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicInheritance", "BasicInheritance\BasicInheritance.csproj", "{4BAA5017-5D1D-4C53-9BD8-B44BBD67EC18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees", "Employees\Employees.csproj", "{D9A41268-4A06-429B-AB09-DED9FB7DD06E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{04BE27BB-5AC6-4692-86C4-5A0468CA9AAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectOverrides", "ObjectOverrides\ObjectOverrides.csproj", "{C38B1827-A929-4102-A840-21A411C7D6DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BAA5017-5D1D-4C53-9BD8-B44BBD67EC18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BAA5017-5D1D-4C53-9BD8-B44BBD67EC18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BAA5017-5D1D-4C53-9BD8-B44BBD67EC18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BAA5017-5D1D-4C53-9BD8-B44BBD67EC18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9A41268-4A06-429B-AB09-DED9FB7DD06E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A41268-4A06-429B-AB09-DED9FB7DD06E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A41268-4A06-429B-AB09-DED9FB7DD06E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A41268-4A06-429B-AB09-DED9FB7DD06E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04BE27BB-5AC6-4692-86C4-5A0468CA9AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04BE27BB-5AC6-4692-86C4-5A0468CA9AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04BE27BB-5AC6-4692-86C4-5A0468CA9AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04BE27BB-5AC6-4692-86C4-5A0468CA9AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C38B1827-A929-4102-A840-21A411C7D6DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38B1827-A929-4102-A840-21A411C7D6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38B1827-A929-4102-A840-21A411C7D6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38B1827-A929-4102-A840-21A411C7D6DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

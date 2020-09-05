@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleException", "SimpleException\SimpleException.csproj", "{F171945D-CFF1-4258-B6F8-575702EBAEDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomException", "CustomException\CustomException.csproj", "{FCEF316B-9F39-49B2-BED6-02C9A63937C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessMultipleExceptions", "ProcessMultipleExceptions\ProcessMultipleExceptions.csproj", "{4C844C22-FCAB-43DE-A305-B2268A2F11AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F171945D-CFF1-4258-B6F8-575702EBAEDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F171945D-CFF1-4258-B6F8-575702EBAEDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F171945D-CFF1-4258-B6F8-575702EBAEDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F171945D-CFF1-4258-B6F8-575702EBAEDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCEF316B-9F39-49B2-BED6-02C9A63937C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCEF316B-9F39-49B2-BED6-02C9A63937C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCEF316B-9F39-49B2-BED6-02C9A63937C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCEF316B-9F39-49B2-BED6-02C9A63937C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C844C22-FCAB-43DE-A305-B2268A2F11AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C844C22-FCAB-43DE-A305-B2268A2F11AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C844C22-FCAB-43DE-A305-B2268A2F11AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C844C22-FCAB-43DE-A305-B2268A2F11AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

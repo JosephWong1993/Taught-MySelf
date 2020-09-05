@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstWorkflowExampleApp", "FirstWorkflowExampleApp\FirstWorkflowExampleApp.csproj", "{32F93412-B1D8-4A11-99F0-E2DA1D36401E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumerateMachineDataWF", "EnumerateMachineDataWF\EnumerateMachineDataWF.csproj", "{7F37E437-0902-4028-8346-648B32AD5FE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckInventoryWorkflowLib", "CheckInventoryWorkflowLib\CheckInventoryWorkflowLib.csproj", "{E175C19C-9B4B-4AF0-92FA-6488ACCC5F9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowLibraryClient", "WorkflowLibraryClient\WorkflowLibraryClient.csproj", "{CED45F67-A87A-4C03-B8AA-43879E04A488}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32F93412-B1D8-4A11-99F0-E2DA1D36401E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{32F93412-B1D8-4A11-99F0-E2DA1D36401E}.Debug|x86.ActiveCfg = Debug|x86
+		{32F93412-B1D8-4A11-99F0-E2DA1D36401E}.Debug|x86.Build.0 = Debug|x86
+		{32F93412-B1D8-4A11-99F0-E2DA1D36401E}.Release|Any CPU.ActiveCfg = Release|x86
+		{32F93412-B1D8-4A11-99F0-E2DA1D36401E}.Release|x86.ActiveCfg = Release|x86
+		{32F93412-B1D8-4A11-99F0-E2DA1D36401E}.Release|x86.Build.0 = Release|x86
+		{7F37E437-0902-4028-8346-648B32AD5FE1}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7F37E437-0902-4028-8346-648B32AD5FE1}.Debug|x86.ActiveCfg = Debug|x86
+		{7F37E437-0902-4028-8346-648B32AD5FE1}.Debug|x86.Build.0 = Debug|x86
+		{7F37E437-0902-4028-8346-648B32AD5FE1}.Release|Any CPU.ActiveCfg = Release|x86
+		{7F37E437-0902-4028-8346-648B32AD5FE1}.Release|x86.ActiveCfg = Release|x86
+		{7F37E437-0902-4028-8346-648B32AD5FE1}.Release|x86.Build.0 = Release|x86
+		{E175C19C-9B4B-4AF0-92FA-6488ACCC5F9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E175C19C-9B4B-4AF0-92FA-6488ACCC5F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E175C19C-9B4B-4AF0-92FA-6488ACCC5F9B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E175C19C-9B4B-4AF0-92FA-6488ACCC5F9B}.Debug|x86.Build.0 = Debug|Any CPU
+		{E175C19C-9B4B-4AF0-92FA-6488ACCC5F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E175C19C-9B4B-4AF0-92FA-6488ACCC5F9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E175C19C-9B4B-4AF0-92FA-6488ACCC5F9B}.Release|x86.ActiveCfg = Release|Any CPU
+		{E175C19C-9B4B-4AF0-92FA-6488ACCC5F9B}.Release|x86.Build.0 = Release|Any CPU
+		{CED45F67-A87A-4C03-B8AA-43879E04A488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED45F67-A87A-4C03-B8AA-43879E04A488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED45F67-A87A-4C03-B8AA-43879E04A488}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CED45F67-A87A-4C03-B8AA-43879E04A488}.Debug|x86.Build.0 = Debug|Any CPU
+		{CED45F67-A87A-4C03-B8AA-43879E04A488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED45F67-A87A-4C03-B8AA-43879E04A488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CED45F67-A87A-4C03-B8AA-43879E04A488}.Release|x86.ActiveCfg = Release|Any CPU
+		{CED45F67-A87A-4C03-B8AA-43879E04A488}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {091C4020-0C84-47A6-A0CC-0C6B6C51C9B3}
+	EndGlobalSection
+EndGlobal

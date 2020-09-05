@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloLinq", "HelloLinq\HelloLinq.csproj", "{9AADB203-019E-4F11-AA2C-BD053903C82A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldSchoolHello", "OldSchoolHello\OldSchoolHello.csproj", "{B5993F79-A021-4F2B-913F-586E142AE1E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloLinqWithGroupingAndSorting", "HelloLinqWithGroupingAndSorting\HelloLinqWithGroupingAndSorting.csproj", "{4FC3FED8-0F24-4705-A0E5-702CE16FC11F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloLinqToXml", "HelloLinqToXml\HelloLinqToXml.csproj", "{7B09E9FC-0965-4FC6-9C18-74AF2A97CFD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldSchoolXml", "OldSchoolXml\OldSchoolXml.csproj", "{E4A6E596-26D2-4E8F-B240-B71DB7DEDC73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloLinqToSql", "HelloLinqToSql\HelloLinqToSql.csproj", "{8B53E856-8FEE-42A4-9AC3-F4FBB30A3077}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AADB203-019E-4F11-AA2C-BD053903C82A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AADB203-019E-4F11-AA2C-BD053903C82A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AADB203-019E-4F11-AA2C-BD053903C82A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AADB203-019E-4F11-AA2C-BD053903C82A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5993F79-A021-4F2B-913F-586E142AE1E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5993F79-A021-4F2B-913F-586E142AE1E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5993F79-A021-4F2B-913F-586E142AE1E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5993F79-A021-4F2B-913F-586E142AE1E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FC3FED8-0F24-4705-A0E5-702CE16FC11F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC3FED8-0F24-4705-A0E5-702CE16FC11F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC3FED8-0F24-4705-A0E5-702CE16FC11F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC3FED8-0F24-4705-A0E5-702CE16FC11F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B09E9FC-0965-4FC6-9C18-74AF2A97CFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B09E9FC-0965-4FC6-9C18-74AF2A97CFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B09E9FC-0965-4FC6-9C18-74AF2A97CFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B09E9FC-0965-4FC6-9C18-74AF2A97CFD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4A6E596-26D2-4E8F-B240-B71DB7DEDC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4A6E596-26D2-4E8F-B240-B71DB7DEDC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4A6E596-26D2-4E8F-B240-B71DB7DEDC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4A6E596-26D2-4E8F-B240-B71DB7DEDC73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B53E856-8FEE-42A4-9AC3-F4FBB30A3077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B53E856-8FEE-42A4-9AC3-F4FBB30A3077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B53E856-8FEE-42A4-9AC3-F4FBB30A3077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B53E856-8FEE-42A4-9AC3-F4FBB30A3077}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1E865A8-2145-4CAA-99EE-73226F6E9931}
+	EndGlobalSection
+EndGlobal

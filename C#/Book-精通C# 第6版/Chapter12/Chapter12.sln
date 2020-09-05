@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqOverArray", "LinqOverArray\LinqOverArray.csproj", "{9955DAEE-8D5E-4180-B6E7-590A422757B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqRetValues", "LinqRetValues\LinqRetValues.csproj", "{5C7ECBEF-EC0E-4E8B-95C7-0A10B99F29DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqOverCustomObjects", "LinqOverCustomObjects\LinqOverCustomObjects.csproj", "{6B076A17-4800-453E-A806-D73906EE9A81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqOverArrayList", "LinqOverArrayList\LinqOverArrayList.csproj", "{7C964D6E-A280-436A-AC60-627CF444EE39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithLinqExpressions", "FunWithLinqExpressions\FunWithLinqExpressions.csproj", "{BED937EA-23DA-4EE1-85A0-071B06BDD4E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqUsingEnumerable", "LinqUsingEnumerable\LinqUsingEnumerable.csproj", "{EB1E36BC-AE9C-4167-B614-DCA5D6A0567E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9955DAEE-8D5E-4180-B6E7-590A422757B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9955DAEE-8D5E-4180-B6E7-590A422757B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9955DAEE-8D5E-4180-B6E7-590A422757B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9955DAEE-8D5E-4180-B6E7-590A422757B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C7ECBEF-EC0E-4E8B-95C7-0A10B99F29DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7ECBEF-EC0E-4E8B-95C7-0A10B99F29DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7ECBEF-EC0E-4E8B-95C7-0A10B99F29DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7ECBEF-EC0E-4E8B-95C7-0A10B99F29DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B076A17-4800-453E-A806-D73906EE9A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B076A17-4800-453E-A806-D73906EE9A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B076A17-4800-453E-A806-D73906EE9A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B076A17-4800-453E-A806-D73906EE9A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C964D6E-A280-436A-AC60-627CF444EE39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C964D6E-A280-436A-AC60-627CF444EE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C964D6E-A280-436A-AC60-627CF444EE39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C964D6E-A280-436A-AC60-627CF444EE39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED937EA-23DA-4EE1-85A0-071B06BDD4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED937EA-23DA-4EE1-85A0-071B06BDD4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED937EA-23DA-4EE1-85A0-071B06BDD4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED937EA-23DA-4EE1-85A0-071B06BDD4E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB1E36BC-AE9C-4167-B614-DCA5D6A0567E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB1E36BC-AE9C-4167-B614-DCA5D6A0567E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB1E36BC-AE9C-4167-B614-DCA5D6A0567E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB1E36BC-AE9C-4167-B614-DCA5D6A0567E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

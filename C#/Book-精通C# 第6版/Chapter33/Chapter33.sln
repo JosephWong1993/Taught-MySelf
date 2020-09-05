@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DynamicCtrls", "DynamicCtrls\", "{FDCEA93B-8A38-4BF8-94E4-22C78EC4D249}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_7103"
+		Debug.AspNetCompiler.PhysicalPath = "DynamicCtrls\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_7103\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_7103"
+		Release.AspNetCompiler.PhysicalPath = "DynamicCtrls\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_7103\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "7103"
+		SlnRelativePath = "DynamicCtrls\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AspNetCarsSite", "AspNetCarsSite\", "{5EB6356A-A04F-4A54-907D-1C4F4666ED77}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_3368"
+		Debug.AspNetCompiler.PhysicalPath = "AspNetCarsSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3368\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_3368"
+		Release.AspNetCompiler.PhysicalPath = "AspNetCarsSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3368\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3368"
+		SlnRelativePath = "AspNetCarsSite\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ValidatorCtrls", "ValidatorCtrls\", "{A229B414-2643-4492-9152-97F84573F72D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_4842"
+		Debug.AspNetCompiler.PhysicalPath = "ValidatorCtrls\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4842\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_4842"
+		Release.AspNetCompiler.PhysicalPath = "ValidatorCtrls\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4842\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "4842"
+		SlnRelativePath = "ValidatorCtrls\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDCEA93B-8A38-4BF8-94E4-22C78EC4D249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDCEA93B-8A38-4BF8-94E4-22C78EC4D249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB6356A-A04F-4A54-907D-1C4F4666ED77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB6356A-A04F-4A54-907D-1C4F4666ED77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A229B414-2643-4492-9152-97F84573F72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A229B414-2643-4492-9152-97F84573F72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

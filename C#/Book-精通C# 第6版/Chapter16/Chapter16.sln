@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicKeyword", "DynamicKeyword\DynamicKeyword.csproj", "{C7DC6DB9-2342-481D-8AB4-DD7667064B36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LateBindingWithDynamic", "LateBindingWithDynamic\LateBindingWithDynamic.csproj", "{49F96725-57BA-4DED-839C-D68F370C0C00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLibrary", "MathLibrary\MathLibrary.csproj", "{F04E05B7-7DDF-4F94-A34D-B8DF1B4F6048}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportDataToOfficeApp", "ExportDataToOfficeApp\ExportDataToOfficeApp.csproj", "{565EC714-4155-40CC-9208-1163392C903A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7DC6DB9-2342-481D-8AB4-DD7667064B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7DC6DB9-2342-481D-8AB4-DD7667064B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7DC6DB9-2342-481D-8AB4-DD7667064B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7DC6DB9-2342-481D-8AB4-DD7667064B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49F96725-57BA-4DED-839C-D68F370C0C00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F96725-57BA-4DED-839C-D68F370C0C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F96725-57BA-4DED-839C-D68F370C0C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F96725-57BA-4DED-839C-D68F370C0C00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F04E05B7-7DDF-4F94-A34D-B8DF1B4F6048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F04E05B7-7DDF-4F94-A34D-B8DF1B4F6048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F04E05B7-7DDF-4F94-A34D-B8DF1B4F6048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F04E05B7-7DDF-4F94-A34D-B8DF1B4F6048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{565EC714-4155-40CC-9208-1163392C903A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565EC714-4155-40CC-9208-1163392C903A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565EC714-4155-40CC-9208-1163392C903A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565EC714-4155-40CC-9208-1163392C903A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

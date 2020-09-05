@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 11.625" name="Lia">
+  <DataContextMoniker Name="/LiaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e4d1c680-592e-40cd-b09b-0980357d0d03" absoluteBounds="6.75, 6.25, 2, 2.1446048990885425">
+      <DataClassMoniker Name="/LiaDataContext/Address" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b7ac9f38-5aca-4f56-a87b-9536939807c5" absoluteBounds="6.765, 6.71, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c6b0f627-ec66-419b-9a5b-8b4e33062f6f" absoluteBounds="3.5, 9.5, 2, 1.7625655110677059">
+      <DataClassMoniker Name="/LiaDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3fd611df-0033-411f-a58e-97ac8eb4c888" absoluteBounds="3.515, 9.96, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0f450c47-b732-4d75-9561-eeea1c42cb3e" absoluteBounds="6.75, 9.25, 2, 1.5715458170572916">
+      <DataClassMoniker Name="/LiaDataContext/AuditTracking" />
+      <nestedChildShapes>
+        <elementListCompartment Id="547efeed-07c4-41f3-831a-4d658431d6e3" absoluteBounds="6.765, 9.71, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fb3d06a5-5e40-4af2-a533-5c0e2108fb6f" absoluteBounds="3.5, 6.875, 2, 1.7625655110677085">
+      <DataClassMoniker Name="/LiaDataContext/Author" />
+      <nestedChildShapes>
+        <elementListCompartment Id="127fe743-bf29-4667-bfe4-12ea3b6be5e4" absoluteBounds="3.515, 7.3350000000000009, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0c59659d-2058-4bc0-a649-a8fee3a3f64b" absoluteBounds="3.5, 3.125, 2, 2.717663981119792">
+      <DataClassMoniker Name="/LiaDataContext/Book" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ebab990-3bec-4989-88b6-3e3eccb67a50" absoluteBounds="3.515, 3.585, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b20d4be9-a84b-4f18-86c1-7cddb000fd3a" absoluteBounds="6.25, 0.75, 2, 1.3805261230468755">
+      <DataClassMoniker Name="/LiaDataContext/BookAuthor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c619c5a-e6ca-4065-983b-5ee42757ceb0" absoluteBounds="6.265, 1.21, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="82998aa5-f4b8-4f2f-8739-c64760fafa6e" absoluteBounds="0.75, 7.625, 2, 1.5715458170572925">
+      <DataClassMoniker Name="/LiaDataContext/Publisher" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6db9ff85-9c7b-4a00-a29e-66258b86c7d5" absoluteBounds="0.765, 8.085, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e1227329-084b-40c3-80f1-58da31ee4fcc" absoluteBounds="6.25, 3.5, 2, 1.7625655110677077">
+      <DataClassMoniker Name="/LiaDataContext/Review" />
+      <nestedChildShapes>
+        <elementListCompartment Id="26e2a740-fcc9-4473-816b-93df9f343925" absoluteBounds="6.265, 3.96, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="124cdaf4-4f47-437f-88d8-5dcc4cf809e1" absoluteBounds="0.75, 3.75, 2, 1.3805261230468733">
+      <DataClassMoniker Name="/LiaDataContext/Subject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e24abca3-550c-4cf1-a5c0-1d7badd41d9f" absoluteBounds="0.765, 4.21, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 6.875); (5.875 : 6.5); (5.875 : 1.44026306152344); (6.25 : 1.44026306152344)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LiaDataContext/Author/Author_BookAuthor" />
+      <nodes>
+        <classShapeMoniker Id="fb3d06a5-5e40-4af2-a533-5c0e2108fb6f" />
+        <classShapeMoniker Id="b20d4be9-a84b-4f18-86c1-7cddb000fd3a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 3.125); (4.5 : 1.81664709228516); (5.79166666666667 : 1.81664709228516 : JumpStart); (5.95833333333333 : 1.81664709228516 : JumpEnd); (6.25 : 1.81664709228516)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LiaDataContext/Book/Book_BookAuthor" />
+      <nodes>
+        <classShapeMoniker Id="0c59659d-2058-4bc0-a649-a8fee3a3f64b" />
+        <classShapeMoniker Id="b20d4be9-a84b-4f18-86c1-7cddb000fd3a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.625); (3.125 : 7.25); (3.125 : 4.4838319905599); (3.5 : 4.4838319905599)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LiaDataContext/Publisher/Publisher_Book" />
+      <nodes>
+        <classShapeMoniker Id="82998aa5-f4b8-4f2f-8739-c64760fafa6e" />
+        <classShapeMoniker Id="0c59659d-2058-4bc0-a649-a8fee3a3f64b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.38128275553385); (5.79166666666667 : 4.38128275553385 : JumpStart); (5.95833333333333 : 4.38128275553385 : JumpEnd); (6.25 : 4.38128275553385)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LiaDataContext/Book/Book_Review" />
+      <nodes>
+        <classShapeMoniker Id="0c59659d-2058-4bc0-a649-a8fee3a3f64b" />
+        <classShapeMoniker Id="e1227329-084b-40c3-80f1-58da31ee4fcc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.0733056640625); (6.46875 : 11.0733056640625); (6.46875 : 5.26256551106771)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LiaDataContext/User/User_Review" />
+      <nodes>
+        <classShapeMoniker Id="c6b0f627-ec66-419b-9a5b-8b4e33062f6f" />
+        <classShapeMoniker Id="e1227329-084b-40c3-80f1-58da31ee4fcc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.05441599527995); (3.5 : 4.05441599527995)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LiaDataContext/Subject/Subject_Book" />
+      <nodes>
+        <classShapeMoniker Id="124cdaf4-4f47-437f-88d8-5dcc4cf809e1" />
+        <classShapeMoniker Id="0c59659d-2058-4bc0-a649-a8fee3a3f64b" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

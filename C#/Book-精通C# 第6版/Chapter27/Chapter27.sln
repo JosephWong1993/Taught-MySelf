@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppAllCode", "WpfAppAllCode\WpfAppAllCode.csproj", "{0AB69F97-1FA3-46CF-962C-29DB0FE3D870}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTesterApp", "WpfTesterApp\WpfTesterApp.csproj", "{B68E0CBD-3D0D-48A0-ADEB-396F420F67C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyXamlPad", "MyXamlPad\MyXamlPad.csproj", "{AFFC317D-6B55-419D-A3D4-B06944589B42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AB69F97-1FA3-46CF-962C-29DB0FE3D870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB69F97-1FA3-46CF-962C-29DB0FE3D870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB69F97-1FA3-46CF-962C-29DB0FE3D870}.Debug|x86.ActiveCfg = Debug|x86
+		{0AB69F97-1FA3-46CF-962C-29DB0FE3D870}.Debug|x86.Build.0 = Debug|x86
+		{0AB69F97-1FA3-46CF-962C-29DB0FE3D870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB69F97-1FA3-46CF-962C-29DB0FE3D870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AB69F97-1FA3-46CF-962C-29DB0FE3D870}.Release|x86.ActiveCfg = Release|x86
+		{0AB69F97-1FA3-46CF-962C-29DB0FE3D870}.Release|x86.Build.0 = Release|x86
+		{B68E0CBD-3D0D-48A0-ADEB-396F420F67C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68E0CBD-3D0D-48A0-ADEB-396F420F67C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68E0CBD-3D0D-48A0-ADEB-396F420F67C0}.Debug|x86.ActiveCfg = Debug|x86
+		{B68E0CBD-3D0D-48A0-ADEB-396F420F67C0}.Debug|x86.Build.0 = Debug|x86
+		{B68E0CBD-3D0D-48A0-ADEB-396F420F67C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68E0CBD-3D0D-48A0-ADEB-396F420F67C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B68E0CBD-3D0D-48A0-ADEB-396F420F67C0}.Release|x86.ActiveCfg = Release|x86
+		{B68E0CBD-3D0D-48A0-ADEB-396F420F67C0}.Release|x86.Build.0 = Release|x86
+		{AFFC317D-6B55-419D-A3D4-B06944589B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFFC317D-6B55-419D-A3D4-B06944589B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFFC317D-6B55-419D-A3D4-B06944589B42}.Debug|x86.ActiveCfg = Debug|x86
+		{AFFC317D-6B55-419D-A3D4-B06944589B42}.Debug|x86.Build.0 = Debug|x86
+		{AFFC317D-6B55-419D-A3D4-B06944589B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFFC317D-6B55-419D-A3D4-B06944589B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFFC317D-6B55-419D-A3D4-B06944589B42}.Release|x86.ActiveCfg = Release|x86
+		{AFFC317D-6B55-419D-A3D4-B06944589B42}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {740501F8-9E4B-42AC-A988-309A278A2B93}
+	EndGlobalSection
+EndGlobal

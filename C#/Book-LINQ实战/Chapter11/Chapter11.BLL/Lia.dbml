@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Lia" Class="LiaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=127.0.0.1;Initial Catalog=Lia;Integrated Security=True" SettingsObjectName="Chapter11.BLL.Properties.Settings" SettingsPropertyName="LiaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Address" Member="Address">
+    <Type Name="Address">
+      <Column Name="AddressId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Street1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Street2" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Region" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="User">
+    <Type Name="User">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="UserType" Type="System.Char" DbType="NChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Publisher" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Author" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="User_Review" Member="Review" ThisKey="ID" OtherKey="User" Type="Review" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AuditTracking" Member="AuditTracking">
+    <Type Name="AuditTracking">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TableName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AccessDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Author" Member="Author">
+    <Type Name="Author">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="WebSite" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="Author_BookAuthor" Member="BookAuthor" ThisKey="ID" OtherKey="Author" Type="BookAuthor" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Book" Member="Book">
+    <Type Name="Book">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Isbn" Type="System.String" DbType="NChar(13)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="PageCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PubDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Publisher" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Subject" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Summary" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Book_BookAuthor" Member="BookAuthor" ThisKey="ID" OtherKey="Book" Type="BookAuthor" />
+      <Association Name="Book_Review" Member="Review" ThisKey="ID" OtherKey="Book" Type="Review" />
+      <Association Name="Publisher_Book" Member="Publisher1" ThisKey="Publisher" OtherKey="ID" Type="Publisher" IsForeignKey="true" />
+      <Association Name="Subject_Book" Member="Subject1" ThisKey="Subject" OtherKey="ID" Type="Subject" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BookAuthor" Member="BookAuthor">
+    <Type Name="BookAuthor">
+      <Column Name="Author" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Book" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AuthorOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Author_BookAuthor" Member="Author1" ThisKey="Author" OtherKey="ID" Type="Author" IsForeignKey="true" />
+      <Association Name="Book_BookAuthor" Member="Book1" ThisKey="Book" OtherKey="ID" Type="Book" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Publisher" Member="Publisher">
+    <Type Name="Publisher">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Logo" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="WebSite" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="Publisher_Book" Member="Book" ThisKey="ID" OtherKey="Publisher" Type="Book" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Review" Member="Review">
+    <Type Name="Review">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Book" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="[User]" Member="User" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Rating" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Comments" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Association Name="Book_Review" Member="Book1" ThisKey="Book" OtherKey="ID" Type="Book" IsForeignKey="true" />
+      <Association Name="User_Review" Member="User1" ThisKey="User" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Subject" Member="Subject">
+    <Type Name="Subject">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="Subject_Book" Member="Book" ThisKey="ID" OtherKey="Subject" Type="Book" />
+    </Type>
+  </Table>
+</Database>

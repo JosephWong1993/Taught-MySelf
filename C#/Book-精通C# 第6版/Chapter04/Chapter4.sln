@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodOverloading", "MethodOverloading\MethodOverloading.csproj", "{6E511C50-FC10-47B2-A4BE-AB4CE8E60249}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithArrays", "FunWithArrays\FunWithArrays.csproj", "{30494AD4-8FA9-43C4-9E42-10836007B7A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithEnums", "FunWithEnums\FunWithEnums.csproj", "{C1F7609E-928C-4CF6-8D77-7DDC7E9F88F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithStructures", "FunWithStructures\FunWithStructures.csproj", "{AE388D35-311B-40DE-8FFC-CDF30CF7A1BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefTypeValTypeParams", "RefTypeValTypeParams\RefTypeValTypeParams.csproj", "{F7B10D55-550B-41B3-9A34-ECD2475EF5C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableTypes", "NullableTypes\NullableTypes.csproj", "{748B4130-DFA9-4044-9360-B64374F72EF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E511C50-FC10-47B2-A4BE-AB4CE8E60249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E511C50-FC10-47B2-A4BE-AB4CE8E60249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E511C50-FC10-47B2-A4BE-AB4CE8E60249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E511C50-FC10-47B2-A4BE-AB4CE8E60249}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30494AD4-8FA9-43C4-9E42-10836007B7A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30494AD4-8FA9-43C4-9E42-10836007B7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30494AD4-8FA9-43C4-9E42-10836007B7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30494AD4-8FA9-43C4-9E42-10836007B7A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F7609E-928C-4CF6-8D77-7DDC7E9F88F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F7609E-928C-4CF6-8D77-7DDC7E9F88F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F7609E-928C-4CF6-8D77-7DDC7E9F88F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F7609E-928C-4CF6-8D77-7DDC7E9F88F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE388D35-311B-40DE-8FFC-CDF30CF7A1BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE388D35-311B-40DE-8FFC-CDF30CF7A1BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE388D35-311B-40DE-8FFC-CDF30CF7A1BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE388D35-311B-40DE-8FFC-CDF30CF7A1BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7B10D55-550B-41B3-9A34-ECD2475EF5C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B10D55-550B-41B3-9A34-ECD2475EF5C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B10D55-550B-41B3-9A34-ECD2475EF5C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B10D55-550B-41B3-9A34-ECD2475EF5C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{748B4130-DFA9-4044-9360-B64374F72EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{748B4130-DFA9-4044-9360-B64374F72EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{748B4130-DFA9-4044-9360-B64374F72EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{748B4130-DFA9-4044-9360-B64374F72EF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
