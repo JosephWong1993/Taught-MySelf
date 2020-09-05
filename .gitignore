@@ -1,3 +1,8 @@
 .vs
 .vscode
+
+#C++ & C#
 Debug
+
+#Front-end
+node_modules
