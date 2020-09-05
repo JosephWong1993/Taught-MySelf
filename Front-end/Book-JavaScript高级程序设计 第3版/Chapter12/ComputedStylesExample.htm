@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Computed Styles Example</title>
+    <style type="text/css">
+        #myDiv {
+            background-color: blue;
+            width: 100px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myDiv" style="background-color:red;border:1px solid black"></div>
+    <script>
+        var myDiv = document.querySelector("#myDiv");
+        var computedStyle = document.defaultView.getComputedStyle(myDiv, null);
+
+        console.log(computedStyle.backgroundColor);
+        console.log(computedStyle.width);
+        console.log(computedStyle.height);
+        console.log(computedStyle.border);
+    </script>
+</body>
+
+</html>

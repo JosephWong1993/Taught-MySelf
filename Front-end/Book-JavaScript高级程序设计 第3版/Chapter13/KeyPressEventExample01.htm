@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <input type="text" id="myText" />
+    <script src="EventUtil.js"></script>
+    <script>
+        var textbox = document.getElementById("myText");
+        EventUtil.addHandler(textbox, "keypress", function (event) {
+            event = EventUtil.getEvent(event);
+            console.log(EventUtil.getCharCode(event));
+        });
+    </script>
+</body>
+
+</html>

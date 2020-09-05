@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var xmldom = document.implementation.createDocument("", "root", null);
+
+        console.log(xmldom.documentElement.tagName);    //"root"
+
+        var child = xmldom.createElement("child");
+        xmldom.documentElement.appendChild(child);
+    </script>
+</body>
+
+</html>

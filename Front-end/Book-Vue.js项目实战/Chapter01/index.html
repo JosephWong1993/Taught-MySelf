@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Vue Project Guide setup</title>
+</head>
+
+<body>
+    <!-- 将库添加到这里 -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- 一些HTML代码 -->
+    <div id="root">
+        <p>{{message}}</p>
+        <input v-model="message" />
+    </div>
+
+    <!-- 一些JavaScript代码 -->
+    <script>
+        console.log('Yes! We are using Vue version', Vue.version);
+
+        //  创建Vue实例
+        var app = new Vue({
+            name: "MyApp",
+            //  根DOM元素的CSS选择器
+            //  一些数据
+            data()
+            {
+                return {
+                    message: 'Hello Vue.js',
+                }
+            }
+        });
+
+        //  添加Vue实例到页面中
+        app.$mount('#root');
+    </script>
+</body>
+
+</html>

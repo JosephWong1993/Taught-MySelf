@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Vue 示例</title>
+</head>
+
+<body>
+    <div id="app">
+        <p>总价:{{prices}}</p>
+        <br/>
+        <p>姓名:{{fullName}}</p>
+    </div>
+    <div id="app1"></div>
+    <div id="app2">
+        {{reversedText}}
+    </div>
+
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                package1: [{
+                    name: 'iPhone 7',
+                    price: 7199,
+                    count: 2
+                }, {
+                    name: 'iPad',
+                    price: 2888,
+                    count: 1
+                }],
+                package2: [{
+                    name: 'apple',
+                    price: 3,
+                    count: 5
+                }, {
+                    name: 'banana',
+                    price: 2,
+                    count: 10
+                }],
+                firstName: 'Jack',
+                lastName: 'Green'
+            },
+            computed: {
+                prices() {
+                    var prices = 0;
+                    for (var i = 0; i < this.package1.length; i++) {
+                        prices += this.package1[i].price * this.package1[i].count;
+                    }
+                    for (var i = 0; i < this.package2.length; i++) {
+                        prices += this.package2[i].price * this.package2[i].count;
+                    }
+                    return prices;
+                },
+                fullName: {
+                    //  getter,用于读取
+                    get() {
+                        return this.firstName + ' ' + this.lastName;
+                    },
+                    //  setter,写入时触发
+                    set(newValue) {
+                        var names = newValue.split(' ');
+                        this.firstName = name[0];
+                        this.lastName = names[names.length - 1];
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        var app1 = new Vue({
+            el: '#app1',
+            data: {
+                text: '123,456'
+            }
+        });
+        var app2 = new Vue({
+            el: '#app2',
+            computed: {
+                reversedText() {
+                    //  这里依赖的是实例app1的数据text
+                    return app1.text.split(',').reverse().join(',');
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

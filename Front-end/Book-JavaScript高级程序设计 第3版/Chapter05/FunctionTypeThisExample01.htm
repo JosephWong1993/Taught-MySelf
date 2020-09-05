@@ -1,0 +1,20 @@
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        window.color = "red";
+        var o = { color: "blue" };
+
+        function sayColor() {
+            console.log(this.color);
+        }
+
+        sayColor(); //  "red"
+        o.sayColor = sayColor;
+        o.sayColor();   //  "blue"
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			function log(message) {
+				if (typeof console == "object") {
+					console.log(message);
+				} else if (typeof opera == "object") {
+					opera.postError(message);
+				} else if (typeof java == "object" && typeof java.lang == "object") {
+					java.lang.System.out.println(message);
+				}
+			}
+
+			function sum(num1, num2) {
+				log("Entering sum(), arguments are " + num1 + "," + num2);
+
+				log("Before calculation");
+				var result = num1 + num2;
+				log("After calculation");
+
+				log("Exiting sum()");
+				return result;
+			}
+		</script>
+	</body>
+</html>

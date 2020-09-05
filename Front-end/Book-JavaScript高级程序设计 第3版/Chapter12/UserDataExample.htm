@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var div = document.createElement("div");
+        div.setUserData("name", "Nicholas", function (operation, key, value, src, dest) {
+            if (operation == 1) {
+                dest.setUserData(key, value, function () { });
+            }   //1 表示复制， 2 表示导入， 3 表示删除， 4 表示重命名
+        });
+
+        var newDiv = div.cloneNode(true);
+        console.log(newDiv.getUserData("name"));
+    </script>
+</body>
+
+</html>

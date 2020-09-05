@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <canvas id="drawing" width="200" height="200">
+        A drawing of something.
+    </canvas>
+    <img id="smiley" src="smile.gif" border="1" title="Image tag" />
+    <script>
+        var drawing = document.getElementById("drawing");
+
+        //  确定浏览器支持<canvas>元素
+        if (drawing.getContext) {
+            var context = drawing.getContext("2d");
+
+            var image = document.getElementById("smiley");
+            context.drawImage(image, 10, 10);
+            context.drawImage(image, 50, 10, 20, 30);
+            context.drawImage(image, 0, 10, 50, 50, 0, 100, 40, 60);
+        }
+    </script>
+</body>
+
+</html>

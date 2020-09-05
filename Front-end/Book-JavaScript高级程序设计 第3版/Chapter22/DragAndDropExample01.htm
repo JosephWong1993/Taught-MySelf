@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="EventUtil.js"></script>
+</head>
+
+<body>
+    <div id="myDiv" style="background:red;width:100px;height:100px;position:absolute"></div>
+    <script>
+        EventUtil.addHandler(document, "mousemove", function (event) {
+            var myDiv = document.getElementById("myDiv");
+            myDiv.style.left = event.clientX + "px";
+            myDiv.style.top = event.clientY + "px";
+        })
+    </script>
+</body>
+
+</html>

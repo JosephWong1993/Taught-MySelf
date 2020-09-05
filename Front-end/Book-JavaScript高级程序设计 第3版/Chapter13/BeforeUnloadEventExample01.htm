@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script src="EventUtil.js"></script>
+    <script>
+        EventUtil.addHandler(window, "beforeunload", function (event) {
+            event = EventUtil.getEvent(event);
+            var message = "I'm really going to miss you if you go.";
+            event.returnValue = message;
+            return message;
+        });
+    </script>
+</body>
+
+</html>

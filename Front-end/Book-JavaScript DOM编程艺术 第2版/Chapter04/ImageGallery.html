@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Image Gallery</title>
+		<link rel="stylesheet" href="../css/layout.css" media="screen" />
+		<script src="../js/showPic.js"></script>
+	</head>
+
+	<body onload="countBodyChildren()">
+		<h1>Snapshots</h1>
+		<ul>
+			<li>
+				<a href="../img/fireworks.jpg" title="A fireworks display" onclick="showPic(this); return false;">Firewordks</a>
+			</li>
+			<li>
+				<a href="../img/coffee.jpg" title="A cup of black coffee" onclick="showPic(this); return false;">Coffee</a>
+			</li>
+			<li>
+				<a href="../img/rose.jpg" title="A red, red rose" onclick="showPic(this); return false;">Rose</a>
+			</li>
+			<li>
+				<a href="../img/bigben.jpg" title="The famous clock" onclick="showPic(this); return false;">Big Ben</a>
+			</li>
+		</ul>
+		<img id="placeholder" src="../img/placeholder.gif" alt="my image gallery" />
+		<p id="description">Choose an image.</p>
+	</body>
+
+</html>

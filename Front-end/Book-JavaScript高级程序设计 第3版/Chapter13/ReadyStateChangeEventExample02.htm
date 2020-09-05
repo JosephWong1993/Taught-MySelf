@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script src="EventUtil.js"></script>
+    <script>
+        EventUtil.addHandler(window, "load", function () {
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.rel = "stylesheet";
+
+            EventUtil.addHandler(link, "readystatechange", function (event) {
+                event = EventUtil.getEvent(event);
+                var target = EventUtil.getTarget(event);
+
+                if (target.readyState == "loaded" || target.readyState == "complete") {
+                    EventUtil.removeHanlder(target, "readystatechange", arguments.callee);
+                    console.log("CSS Loaded");
+                }
+            });
+            link.href = "example.css";
+            document.getElementsByTagName("head")[0].appendChild(link);
+        });
+    </script>
+</body>
+
+</html>

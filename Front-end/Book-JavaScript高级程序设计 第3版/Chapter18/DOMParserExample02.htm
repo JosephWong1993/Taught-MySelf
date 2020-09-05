@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var parser = new DOMParser(),
+            xmldom,
+            errors;
+        try {
+            xmldom = parser.parseFromString("<root>", "text/xml");
+            errors = xmldom.getElementsByTagName("parsererror");
+            if (errors.length > 0) {
+                throw new Error("Parsing error!");
+            }
+        }
+        catch{
+            console.log("Parsing error!");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <input type="text" value="" id="myTextbox" />
+    <script src="EventUtil.js"></script>
+    <script>
+        var textbox = document.getElementById("myTextbox"),
+            event;
+
+        EventUtil.addHandler(textbox, "keydown", function (event) {
+            alert(event.type);
+            alert(event.keyCode);
+        });
+
+        //  只适用于Firefox
+        //  创建事件对象
+        event = document.createEvent("KeyEvents");
+
+        //  初始化对象事件
+        event.initKeyboardEvent("keypress", true, true, document.defaultView, false, false, false, false, 65, 65);
+
+        //  触发事件
+        textbox.dispatchEvent(event);
+    </script>
+</body>
+
+</html>

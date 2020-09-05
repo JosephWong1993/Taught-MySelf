@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <div id="myDiv" style="background-color: blue; width: 10px; height: 25px"></div>
+    <script>
+        var myDiv = document.querySelector("#myDiv");
+        var prop, value, i, len;
+        for (i = 0, len = myDiv.style.length; i < len; i++) {
+            prop = myDiv.style[i];    //  或者myDiv.style.item(i)
+            value = myDiv.style.getPropertyCSSValue(prop);
+            console.log(`prop:${value.cssText}(${value.cssValueType})`)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<html>
+
+<head></head>
+
+<body>
+    <div id="div1">
+        <p><b>Hello</b> world!</p>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+    </div>
+    <script>
+        var div = document.getElementById("div1");
+        var walker = document.createTreeWalker(div, NodeFilter.SHOW_ELEMENT, null, false);
+
+        walker.firstChild();    //  转到<p>
+        walker.nextSibling();   //  转到<ul>
+
+        var node = walker.firstChild(); //  乍暖到第一个<li>
+        while (node !== null) {
+            console.log(node.tagName);
+            node = walker.nextSibling();
+        }
+    </script>
+</body>
+
+</html>

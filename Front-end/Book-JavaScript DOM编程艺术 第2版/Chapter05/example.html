@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.warning {
+				font-weight: bold;
+				color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<a href="http://www.example.com" class="popup">Example</a>
+		<p class="warning">Be careful!</p>
+		<script>
+			function popUp(winURL) {
+				window.open(winURL, "popup", "width=320,height=480");
+			}
+
+			window.onload = function() {
+				if(!document.getElementById) return false;
+				var links = document.getElementsByTagName('a');
+				for(var i = 0; i < links.length; i++) {
+					if(links[i].getAttribute('class') == 'popup') {
+						links[i].onclick = function() {
+							popUp(this.getAttribute('href'));
+							return false;
+						};
+					};
+				}
+			};
+		</script>
+	</body>
+
+</html>

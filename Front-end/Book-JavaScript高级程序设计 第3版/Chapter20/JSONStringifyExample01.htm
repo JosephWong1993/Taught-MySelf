@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var book = {
+            title: "Professional JavaScript",
+            authors: [
+                "Nicholas C. Zakas"
+            ],
+            edition: 3,
+            year: 2011
+        };
+
+        var jsonText = JSON.stringify(book, ["title", "edition"]);
+        console.log(jsonText);
+        var bookCopy = JSON.parse(jsonText);
+    </script>
+</body>
+
+</html>

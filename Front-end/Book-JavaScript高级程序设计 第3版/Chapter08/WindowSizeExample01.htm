@@ -1,0 +1,32 @@
+<html>
+
+<body>
+    <script>
+        var pageWidth = window.innerWidth,
+            pageHeight = window.innerHeight;
+        if (typeof pageWidth != "number") {
+            if (document.compatMode == "CSS1Compat") {
+                pageWidth = document.documentElement.clientWidth;
+                pageHeight = document.documentElement.clientHeight;
+            } else {
+                pageWidth = document.body.clientWidth;
+                pageHeight = document.body.clientHeight;
+            }
+        }
+
+        console.log(pageWidth);
+        console.log(pageHeight);
+
+        //  可能被浏览器禁用
+        //  调整到100*100
+        window.resizeTo(100, 100);
+
+        //  调整到200*150
+        window.resizeBy(200, 50);
+
+        //  调整到300*300
+        window.resizeTo(300, 300);
+    </script>
+</body>
+
+</html>

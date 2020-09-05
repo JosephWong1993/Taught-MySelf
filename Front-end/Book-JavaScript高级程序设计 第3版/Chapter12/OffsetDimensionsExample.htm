@@ -1,0 +1,56 @@
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        function getElementLeft(element) {
+            var actualLeft = element.offsetLeft;
+            var current = element.offsetParent;
+
+            while (current !== null) {
+                actualLeft += current.offsetLeft;
+                current = current.offsetParent;
+            }
+            return actualLeft;
+        }
+
+        function getElementTop(element) {
+            var actualTop = element.offsetTop;
+            var current = element.offsetParent;
+
+            while (current !== null) {
+                actualTop += element.offsetTop;
+                current = current.offsetParent;
+            }
+            return actualTop;
+        }
+
+        function getViewport() {
+            if (document.compatMode == "BackCompat") {
+                return {
+                    width: document.body.clientWidth,
+                    height: document.body.clientHeight
+                };
+            } else {
+                return {
+                    width: document.documentElement.clientWidth,
+                    height: document.documentElement.clientHeight
+                };
+            }
+        }
+
+        function scrollToTop(element) {
+            if (element.scrollTop != 0) {
+                element.scrollTop = 0;
+            }
+        }
+
+        var docHeight = Math.max(document.documentElement.scrollHeight,
+            document.documentElement.clientHeight);
+        var docWidth = Math.max(document.documentElement.scrollWidth,
+            document.documentElement.clientWidth);
+    </script>
+</body>
+
+</html>

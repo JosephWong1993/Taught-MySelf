@@ -1,0 +1,15 @@
+<html>
+
+<body>
+    <script>
+        // 不建议传递字符串!传递字符串可能导致性能损失
+        setTimeout("console.log('Hello world!')", 1000);
+
+        // 推荐的调用方式
+        setTimeout(function () {
+            console.log("Hello wrold!");
+        }, 1000);
+    </script>
+</body>
+
+</html>

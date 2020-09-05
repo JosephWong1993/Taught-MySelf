@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <form method="post" id="myForm">
+        <ul>
+            <li><input type="radio" name="color" value="red">Red</li>
+            <li><input type="radio" name="color" value="green">Green</li>
+            <li><input type="radio" name="color" value="blue">Blue</li>
+        </ul>
+    </form>
+    <script>
+        var form = document.getElementById("myForm");
+
+        var colorFields = form.elements["color"];
+        console.log(colorFields.length);
+
+        var firstColorField = colorFields[0];
+        var firstFormField = form.elements[0];
+        console.log(firstColorField === firstFormField);
+    </script>
+</body>
+
+</html>

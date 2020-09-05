@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <iframe name="richedit" style="height:100px;width:100px;" src="black.htm"></iframe>
+    <script src="EventUtil.js"></script>
+    <script type="text/javascript">
+        EventUtil.addHandler(window, "load", function () {
+            frames["richedit"].document.designMode = "on";
+        });
+
+        //  转换粗体文本
+        frames["richedit"].document.execCommand("bold", false, null);
+
+        //  转换斜体文本
+        frames["richedit"].document.execCommand("italic", false, null);
+
+        //  创建指向www.wrox.com的链接
+        frames["richedit"].document.execCommand("createlink", false, "http://www.wrox.com");
+
+        //  格式化为1级标题
+        frames["richedit"].document.execCommand("formatblock", false, "<h1>");
+    </script>
+</body>
+
+</html>

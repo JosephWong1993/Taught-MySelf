@@ -1,0 +1,14 @@
+<!-- 
+  1 image 图片标签
+    1 src 指定要加载的图片的路径
+      图片存着默认宽度和高度 320 * 240 原图大小 200 * 100
+    2 mode 决定 图片内容 如何和 图片标签 宽高 做适配
+      1 scaleToFill 不保持纵横⽐缩放图⽚，使图⽚的宽⾼完全拉伸⾄填满 image 元素。默认值
+      2 aspectFit 保持纵横⽐缩放图⽚，使图⽚的⻓边能完全显⽰出来。 页面轮播图 常用
+      3 aspectFill 保持纵横⽐缩放图⽚，只保证图⽚的短边能完全显⽰出来。 少用
+      4 widthFix 以前web的图片的宽度指定了之后 高度会自己按比例调整。 常用
+      5 top... 类似以前的background-position 
+    3 小程序当中的图片 直接就支持懒加载 lazy-load
+      1 lazy-load 会自己判断 当图片出票在视口上下三屏的高度之内的时候 自己开始加载图片
+ -->
+<image src="https://ae01.alicdn.com/kf/He3e90d6b80444dbb8f6e73030b9e722ej.jpg" mode="top"></image>

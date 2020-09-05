@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Unload Event Example</title>
+</head>
+
+<body>
+    <script src="EventUtil.js"></script>
+    <script>
+        EventUtil.addHandler(window, "scroll", function (event) {
+            if (document.compareDocumentPosition == "CSS1Compat") {
+                console.log(document.documentElement.scrollTop);
+            } else {
+                console.log(document.body.scrollTop);
+            }
+        });
+    </script>
+</body>
+
+</html>

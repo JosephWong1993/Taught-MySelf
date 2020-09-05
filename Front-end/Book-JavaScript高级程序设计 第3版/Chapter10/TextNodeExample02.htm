@@ -1,0 +1,14 @@
+<html>
+
+<head></head>
+
+<body>
+    <div id="myDiv">Hello World!</div>
+    <script>
+        var div = document.getElementById("myDiv")
+        var textNode = div.firstChild;  //或者div.childNodes[0]
+        div.firstChild.nodeValue = "Some <strong>other</strong> message";
+    </script>
+</body>
+
+</html>

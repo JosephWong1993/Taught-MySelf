@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <form method="post" action="javascript:alert('Form submitted!')" id="myForm">
+        <ul>
+            <li><input type="radio" name="color" value="red">Red</li>
+            <li><input type="radio" name="color" value="green">Green</li>
+            <li><input type="radio" name="color" value="blue">Blue</li>
+        </ul>
+        <input type="submit" value="Submit Form" name="submit-btn">
+        <button type="button">Whatever</button>
+    </form>
+    <script src="EventUtil.js"></script>
+    <script>
+        var form = document.forms[0];
+        
+        EventUtil.addHandler(form, "submit", function (event) {
+            event = EventUtil.getEvent(event);
+            var target = EventUtil.getTarget(event);
+
+            //  取得提交按钮
+            var btn = target.elements["submit-btn"];
+
+            //  禁用它
+            btn.disabled = true;
+        })
+    </script>
+</body>
+
+</html>

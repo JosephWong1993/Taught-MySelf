@@ -1,0 +1,34 @@
+<html>
+
+<head></head>
+
+<body>
+    <div id="myDiv" class="bd" title="Body text" lang="en" dir="ltr"></div>
+    <script>
+        var div = document.getElementById("myDiv");
+        console.log(div.getAttribute("id"));    //"myDiv"
+        console.log(div.getAttribute("class")); //"bd"
+        console.log(div.getAttribute("title")); //"Body text"
+        console.log(div.getAttribute("lang"));  //"en"
+        console.log(div.getAttribute("dir"));   //ltr
+
+        div.setAttribute("id", "someOtherId");
+        div.setAttribute("class", "ft");
+        div.setAttribute("title", "Some other text");
+        div.setAttribute("lang", "fr");
+        div.setAttribute("dir", "rtl");
+        console.log(div.getAttribute("id"));    //"someOtherId"
+        console.log(div.getAttribute("class")); //"ft"
+        console.log(div.getAttribute("title")); //"Some other text"
+        console.log(div.getAttribute("lang"));  //"fr"
+        console.log(div.getAttribute("dir"));   //rtl
+
+        div.id = "someOtherId";
+        div.align = "left";
+
+        div.mycolor = "red";
+        console.log(div.getAttribute("mycolor"));   //null(IE除外)
+    </script>
+</body>
+
+</html>

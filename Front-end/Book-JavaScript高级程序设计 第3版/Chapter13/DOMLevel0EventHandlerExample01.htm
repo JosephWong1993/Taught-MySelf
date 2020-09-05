@@ -1,0 +1,16 @@
+<html>
+
+<head></head>
+
+<body>
+    <button id="myBtn">Test</button>
+    <script>
+        var btn = document.getElementById("myBtn");
+        btn.onclick = function () {
+            console.log(this.id);
+            btn.onclick=null;   //  删除事件处理程序
+        };
+    </script>
+</body>
+
+</html>

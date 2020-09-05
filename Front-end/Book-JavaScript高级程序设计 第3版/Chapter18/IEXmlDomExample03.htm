@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        function createDocument() {
+            if (typeof arguments.callee.activeXString != "string") {
+                var versions = ["MSXML2.DOMDocument.6.0", "MSXML2.DOMDocument.3.0", "MSXML2.DOMDocument"],
+                    i, len;
+
+                for (i = 0, len = versions.length; i < len; i++) {
+                    try {
+                        new ActiveXObject(versions[i]);
+                        arguments.callee.activeXString = versions[i];
+                        break;
+                    } catch (ex) {
+                        //  跳过
+                    }
+                }
+            }
+
+            return new ActiveXObject(arguments.callee.activeXString);
+        }
+
+        var xmldom = createDocument();
+        xmldom.async = false;
+        xmldom.load("example.xml");
+
+        if (xmldom.parseError != 0) {
+            //  处理错误
+        } else {
+            console.log(xmldom.documentElement.tagName);    //  "root"
+            console.log(xmldom.documentElement.firstChild.tagName); //  "child"
+
+            var anotherChild = xmldom.createElement("child");
+            xmldom.documentElement.appendChild(anotherChild);
+
+            var children = xmldom.getElementsByTagName("child");
+            console.log(children.length);   //2
+
+            console.log(xmldom.xml);
+        }
+    </script>
+</body>
+
+</html>

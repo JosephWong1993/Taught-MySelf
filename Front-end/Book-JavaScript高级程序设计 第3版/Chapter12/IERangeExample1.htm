@@ -1,0 +1,17 @@
+<html>
+
+<head></head>
+
+<body>
+    <p id="p1"><b>Hello</b> world!</p>
+    <script>
+        var range = document.body.createTextRange();
+        var found = range.findText("Hello");
+        var foundAgain = range.findText("Hello", 1);
+        
+        console.log(found);
+        console.log(range.text);
+    </script>
+</body>
+
+</html>

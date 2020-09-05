@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="EventUtil.js"></script>
+</head>
+
+<body>
+    <script>
+        EventUtil.addHandler(window, "online", function () {
+            console.log("Online");
+        });
+        EventUtil.addHandler(window, "offline", function () {
+            console.log("Offline");
+        });
+    </script>
+</body>
+
+</html>

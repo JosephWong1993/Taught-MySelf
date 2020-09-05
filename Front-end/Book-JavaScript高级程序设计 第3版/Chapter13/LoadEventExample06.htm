@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Load Event Example</title>
+</head>
+
+<body>
+    <script src="EventUtil.js"></script>
+    <script>
+        EventUtil.addHandler(window, "load", function () {
+            var image = new Image();
+            EventUtil.addHandler(image, "load", function (event) {
+                console.log("Image loaded!");
+            });
+            image.src="smile.gif";
+        });
+    </script>
+</body>
+
+</html>

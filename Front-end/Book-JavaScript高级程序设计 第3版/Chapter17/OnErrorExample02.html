@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script src="EventUtil.js"></script>
+		<script>
+			var image=new Image();
+			EventUtil.addHandler(image,"load",function(event){
+				console.log("Image loaded!");
+			});
+			EventUtil.addHandler(image,"error",function(event){
+				console.log("Image not loaded!");
+			});
+			
+			image.src="smilex.gif";
+		</script>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+
+<head></head>
+
+<body>
+    <div id="myDiv"></div>
+    <ul>
+        <li>First item</li>
+        <li class="selected">Second item</li>
+        <li>Third item</li>
+    </ul>
+    <img class="button" />
+    <script>
+        //  取得body元素
+        var body = document.querySelector("body");
+
+        //  取得ID为"myDiv"的元素
+        var myDiv = document.querySelector("#myDiv");
+
+        //  取得类为"selected"的第一个元素
+        var selected = document.querySelector(".selected");
+
+        //  取得类为"button"的第一个图像元素
+        var img = document.body.querySelector("img.button");
+
+        console.log(body);
+        console.log(myDiv);
+        console.log(selected);
+        console.log(img);
+    </script>
+</body>
+
+</html>

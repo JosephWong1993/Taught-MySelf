@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <style>
+        div.box {
+            background-color: blue;
+            width: 100px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function insertRule(sheet, selectorText, cssText, position) {
+            if (sheet.insertRule) {
+                sheet.insertRule(selectorText + "{" + cssText + "}", position);
+            } else if (sheet.addRule) {
+                sheet.addRule(selectorText, cssText, position);
+            }
+        }
+        function deleteRule(sheet, index) {
+            if (sheet.deleteRule) {
+                sheet.deleteRule(index);
+            } else if (sheet.removeRule) {
+                sheet.removeRule(index);
+            }
+        }
+        insertRule(document.styleSheets[0], "body", "baclground-color:silver", 0);
+        console.log(document.styleSheets[0]);
+        deleteRule(document.styleSheets[0], 0);
+    </script>
+</body>
+
+</html>

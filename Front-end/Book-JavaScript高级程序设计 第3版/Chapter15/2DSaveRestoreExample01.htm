@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <canvas id="drawing" width="200" height="200">
+        A drawing of something.
+    </canvas>
+    <input type="button" value="Export" id="export-btn">
+    <script>
+        var drawing = document.getElementById("drawing"),
+            btn = document.getElementById("export-btn");
+
+        //  确定浏览器支持<canvas>元素
+        if (drawing.getContext) {
+            var context = drawing.getContext("2d");
+
+            context.fillStyle = "#ff0000";
+            context.save();
+
+            context.fillStyle = "#00ff00";
+            context.translate(100, 100);
+            context.save();
+
+            context.fillStyle = "#0000ff";
+            context.fillRect(0, 0, 100, 200);   //  从点(100,100)开始绘制蓝色矩形
+
+            context.restore();
+            context.fillRect(10, 10, 200, 200); //  从点(110,100)开始绘制绿色矩形
+
+            context.restore();
+            context.fillRect(0, 0, 100, 200);   //  从点(0,0)开始绘制红色矩形
+        }
+
+        btn.onclick = function () {
+            //  取得图像的数据URI
+            var imgURI = drawing.toDataURL("image/png");
+
+            //  显示图像
+            var image = document.createElement("img");
+
+            image.src = imgURI;
+            document.body.appendChild(image);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+
+<head></head>
+
+<body>
+    <button id="myBtn">Click Me</button>
+    <script src="EventUtil.js"></script>
+    <script>
+        var btn = document.getElementById("myBtn");
+        btn.onclick = function (event) {
+            console.log("Clicked");
+            event = EventUtil.getEvent(event);
+            EventUtil.stopPropagation(event);
+        };
+        document.body.onclick = function (event) {
+            console.log("Body clicked");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Example</title>
+		<link rel="stylesheet" media="screen" href="css/styles.css" />
+		<script>
+			window.onload = function() {
+				var para = document.getElementById('example');
+
+				para.style.color = 'black';
+				para.style.font = '2em \'times\',serif';
+
+				console.log('para.nodeName:' + para.nodeName);
+				console.log('para.style:' + para.style);
+				console.log('The color is ' + para.style.color);
+				console.log('The font family is ' + para.style.fontFamily);
+				console.log('The font size is ' + para.style.fontSize);
+			}
+		</script>
+	</head>
+
+	<body>
+		<p id="example">
+			An example of a paragraph
+		</p>
+	</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <canvas id="drawing" width="200" height="200">
+        A drawing of something.
+    </canvas>
+    <input type="button" value="Export" id="export-btn">
+    <script>
+        var drawing = document.getElementById("drawing"),
+            btn = document.getElementById("export-btn");
+
+        //  确定浏览器支持<canvas>元素
+        if (drawing.getContext) {
+            var context = drawing.getContext("2d");
+
+            var fontSize = 100;
+            context.font = fontSize + "px Arial";
+
+            while (context.measureText("Hello world!").width > 140) {
+                fontSize--;
+                context.font = fontSize + "px Arial";
+            }
+
+            context.fillText("Hello world!", 10, 10);
+        }
+
+        btn.onclick = function () {
+            //  取得图像的数据URI
+            var imgURI = drawing.toDataURL("image/png");
+
+            //  显示图像
+            var image = document.createElement("img");
+
+            image.src = imgURI;
+            document.body.appendChild(image);
+        }
+    </script>
+</body>
+
+</html>

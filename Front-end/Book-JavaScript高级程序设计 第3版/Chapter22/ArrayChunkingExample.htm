@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script>
+        function chunk(array, process, context) {
+            setTimeout(function () {
+                var item = array.shift();
+                process.call(context, item);
+
+                if (array.length > 0) {
+                    setTimeout(arguments.callee, 100);
+                }
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="myDiv" style="position:absolute;width:100px;height:100px;left:0px;top:10px;background:red;"></div>
+    <script>
+        var data = [12, 123, 1234, 453, 436, 23, 23, 5, 4123, 45, 346, 5634, 2234, 345, 342];
+
+        function printValue(item) {
+            var div = document.getElementById("myDiv");
+            div.innerHTML += item + "<br>";
+        }
+
+        chunk(data.concat(), printValue);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<html>
+
+<head></head>
+
+<body>
+    <div id="myDiv" style="background-color:red;height:10000px;width:100px">Click me</div>
+    <script src="EventUtil.js"></script>
+    <script>
+        var div = document.getElementById("myDiv");
+        EventUtil.addHandler(div, "click", function (event) {
+            event = EventUtil.getEvent(event);
+            var pageX = event.pageX,
+                pageY = event.pageY;
+
+            if (pageX === undefined) {
+                pageX = event.clientX + (document.body.scrollLeft || document.documentElement.scrollLeft);
+            }
+
+            if (pageY === undefined) {
+                pageY = event.clientY + (document.body.scrollTop || document.documentElement.scrollTop);
+            }
+
+            console.log("Page coordinates: " + pageX + "," + pageY);
+        });
+    </script>
+</body>
+
+</html>

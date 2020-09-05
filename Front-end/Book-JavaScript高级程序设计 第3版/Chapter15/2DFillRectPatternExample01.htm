@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <canvas id="drawing" width="200" height="200">
+        A drawing of something.
+    </canvas>
+    <img id="smiley" src="smile.gif" title="Image tag" />
+    <script>
+        var drawing = document.getElementById("drawing");
+
+        //  确定浏览器支持<canvas>元素
+        if (drawing.getContext) {
+            var context = drawing.getContext("2d");
+            var image = document.images[0];
+            var pattern = context.createPattern(image, "repeat");
+
+            //  绘制矩形
+            context.fillStyle = pattern;
+            context.fillRect(10, 10, 150, 150);
+        }
+    </script>
+</body>
+
+</html>

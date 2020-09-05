@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Vue 示例</title>
+</head>
+
+<body>
+    <div id="app">
+        <a v-bind:href="url">链接</a>
+        <p v-if="show">这是一段文本</p>
+        <button v-on:click="handleClose">点击隐藏</button>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                show: true,
+                url: 'https://www.github.com',
+            },
+            methods: {
+                handleClose: function () {
+                    this.close();
+                },
+                close() {
+                    this.show = false;
+                },
+                init: function (text) {
+                    console.log(text);
+                },
+            },
+            mounted() {
+                this.init('在初始化时调用'); //  在初始化时调用
+            },
+        });
+
+        app.init('通过外部调用'); //  在Vue实例外部调用
+    </script>
+</body>
+
+</html>

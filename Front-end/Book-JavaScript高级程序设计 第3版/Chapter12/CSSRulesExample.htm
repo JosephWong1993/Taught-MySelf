@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <style>
+        div.box {
+            background-color: blue;
+            width: 100px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var sheet = document.styleSheets[0];
+        var rules = sheet.cssRules || sheet.rules;  //  取得规则列表
+        var rule = rules[0];    //  取得第一条规则
+        rule.style.backgroundColor = "red";
+        console.log(rule.selectorText);
+        console.log(rule.style.cssText);
+        console.log(rule.style.backgroundColor);
+        console.log(rule.style.width);
+        console.log(rule.style.height);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<html>
+
+<head></head>
+
+<body>
+    <button id="myBtn">Test</button>
+    <script>
+        document.body.onclick = function (event) {
+            console.log(event.currentTarget === document.body); //true
+            console.log(this === document.body);    //true
+            console.log(event.target === document.getElementById("myBtn")); //true
+        };
+    </script>
+</body>
+
+</html>

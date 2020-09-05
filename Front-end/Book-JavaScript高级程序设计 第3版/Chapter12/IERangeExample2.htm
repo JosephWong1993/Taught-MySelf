@@ -1,0 +1,20 @@
+<html>
+
+<head></head>
+
+<body>
+    <p id="p1"><b>Hello</b> world!</p>
+    <script>
+        var range = document.body.createTextRange();
+        var p1 = document.getElementById("p1");
+        range.moveToElementText(p1);
+        console.log(range.htmlText);
+        var amcestor = range.parentElement();
+
+        range.moveStart("world", 2);    //起点移动2个单词
+        range.moveEnd("character", 1);  //终点移动1个字符
+        range.move("character", 5);     //移动5个字符
+    </script>
+</body>
+
+</html>

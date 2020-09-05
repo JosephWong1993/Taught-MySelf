@@ -1,0 +1,18 @@
+<html>
+
+<head></head>
+
+<body>
+    <button id="myBtn">Test</button>
+    <script>
+        var btn = document.getElementById("myBtn");
+        btn.attachEvent("onclick", function () {
+            console.log("Clicked");   
+        });
+        btn.attachEvent("onclick", function () {
+            console.log(this === window);   //  true
+        });
+    </script>
+</body>
+
+</html>

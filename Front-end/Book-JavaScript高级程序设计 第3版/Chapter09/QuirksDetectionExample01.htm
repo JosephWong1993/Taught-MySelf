@@ -1,0 +1,32 @@
+<html>
+
+<body>
+    <script>
+        var hasDontEnumQuirk = function () {
+            var o = { toString: function () { } };
+            for (var prop in o) {
+                if (prop == "toString") {
+                    return false;
+                }
+            }
+
+            return true;
+        }();
+
+        var hasEnumShadowQuirk = function () {
+            var o = { toString: function () { } };
+            var count = 0;
+            for (var prop in o) {
+                if (prop == "toString") {
+                    count++;
+                }
+            }
+            return (count > 1);
+        }();
+
+        console.log(hasDontEnumQuirk);
+        console.log(hasEnumShadowQuirk);
+    </script>
+</body>
+
+</html>

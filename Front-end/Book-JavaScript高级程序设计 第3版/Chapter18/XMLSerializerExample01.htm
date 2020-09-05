@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var parser = new DOMParser();
+        var xmldom = parser.parseFromString("<root><child/></root>", "text/xml");
+
+        var serializer = new XMLSerializer();
+        var xml = serializer.serializeToString(xmldom);
+        console.log(xml);
+    </script>
+</body>
+
+</html>

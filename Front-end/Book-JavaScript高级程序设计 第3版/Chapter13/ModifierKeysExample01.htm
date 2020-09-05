@@ -1,0 +1,34 @@
+<html>
+
+<head></head>
+
+<body>
+    <div id="myDiv" style="background-color:red;height:10000px;width:100px">Click me</div>
+    <script src="EventUtil.js"></script>
+    <script>
+        var div = document.getElementById("myDiv");
+        EventUtil.addHandler(div, "click", function (event) {
+            event = EventUtil.getEvent(event);
+            var keys = new Array();
+            if (event.shiftKey) {
+                keys.push("shift");
+            }
+
+            if (event.ctrlKey) {
+                keys.push("ctrl");
+            }
+
+            if (event.altKey) {
+                keys.push("alt");
+            }
+
+            if (event.metaKey) {
+                keys.push("meta");
+            }
+
+            console.log("Keys: " + keys.join(","));
+        });
+    </script>
+</body>
+
+</html>

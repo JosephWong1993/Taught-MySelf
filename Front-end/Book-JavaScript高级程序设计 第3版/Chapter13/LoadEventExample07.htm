@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Load Event Example</title>
+</head>
+
+<body>
+    <script src="EventUtil.js"></script>
+    <script>
+        EventUtil.addHandler(window, "load", function () {
+            var script = document.createElement("script");
+            EventUtil.addHandler(script, "load", function (event) {
+                console.log("Loaded");
+            });
+            script.src = "example.js";
+            document.body.appendChild(script);
+        });
+
+        EventUtil.addHandler(window, "load", function () {
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            EventUtil.addHandler(link, "load", function (event) {
+                console.log("css loaded");
+            });
+            link.href = "example.css";
+            document.getElementsByTagName("head")[0].appendChild(link);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+<!-- 
+  1 长安文字复制 selectable
+  2 对文本内容进行解码 decode
+ -->
+<text selectable="true" decode="true">
+text &nbsp; 123 &lt;</text>

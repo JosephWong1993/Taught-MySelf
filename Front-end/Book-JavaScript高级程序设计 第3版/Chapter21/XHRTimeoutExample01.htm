@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script>
+        function createXHR() {
+            if (typeof XMLHttpRequest != "undefined") {
+                return new XMLHttpRequest();
+            } else if (typeof ActiveXObject != "undefined") {
+                if (typeof arguments.callee.activeXString != "string") {
+                    var versions = ["MSXML2.XMLHTTP.6.0", "MSXML2.XMLHTTP.3.0", "MSXML2.XMLHTTP"],
+                        i, len;
+                    for (i = 0, len = versions.length; i < len; i++) {
+                        try {
+                            new ActiveXObject(versions[i]);
+                            arguments.callee.activeXString = versions[i];
+                            break;
+                        } catch (ex) {
+                            //  跳过
+                        }
+                    }
+                }
+                return new ActiveXObject(arguments.callee.activeXString);
+            } else {
+                throw new Error("No XHR object available.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var xhr = createXHR();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyStatus == 4) {
+                try {
+                    if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304) {
+                        console.log(xhr.responseText);
+                    } else {
+                        console.log("Request was unsuccessful: " + xhr.status);
+                    }
+                }
+                catch (ex) {
+                    //  假设由ontimeout事件处理程序处理
+                }
+            }
+        };
+        xhr.open("post", "timeout.php", true);
+        xhr.timeout = 1000;   //  将超时设置为1秒钟(仅适用于IE8+)
+        xhr.ontimeout = function () {
+            console.log("Request did not return in a second.");
+        }
+        xhr.send(null);
+    </script>
+</body>
+
+</html>

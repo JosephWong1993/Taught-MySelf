@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Vue 示例</title>
+</head>
+
+<body>
+    <div id="mount-div">
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <script>
+        var MyComponent = Vue.extend({
+            template: '<div>Hello:{{name}}</div>',
+            data: function () {
+                return {
+                    name: 'Aresn'
+                }
+            }
+        })
+
+        // new MyComponent().$mount('#mount-div');
+
+        // new MyComponent({
+        //     el: '#mount-div'
+        // });
+
+        var component = new MyComponent().$mount();
+        document.getElementById('mount-div').appendChild(component.$el);
+    </script>
+</body>
+
+</html>

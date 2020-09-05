@@ -1,0 +1,19 @@
+<html>
+
+<head></head>
+
+<body>
+    <button id="myBtn">Click Me</button>
+    <script>
+        var btn = document.getElementById("myBtn");
+        btn.onclick = function () {
+            console.log(window.event.srcElement === this);
+        };
+
+        btn.attachEvent("onclick", function (event) {
+            console.log(event.srcElement === this);
+        });
+    </script>
+</body>
+
+</html>

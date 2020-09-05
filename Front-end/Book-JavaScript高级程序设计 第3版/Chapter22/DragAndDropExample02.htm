@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="EventUtil.js"></script>
+    <script>
+        var DragDrop = function () {
+            var dragging = null;
+
+            function handleEvent(event) {
+                //  获取事件和目标
+                event = EventUtil.getEvent(event);
+                var target = EventUtil.getTarget(event);
+
+                //  确定事件类型
+                switch (event.type) {
+                    case "mousedown":
+                        if (target.className.indexOf("draggable") > -1) {
+                            dragging = target;
+                        }
+                        break;
+                    case "mousemove":
+                        if (dragging !== null) {
+                            //  assign location
+                            dragging.style.left = event.clientX + "px";
+                            dragging.style.top = event.clientY + "px";
+                        }
+                        break;
+                    case "mouseup":
+                        dragging = null;
+                        break;
+                }
+            };
+
+            //  公共接口
+            return {
+                enable: function () {
+                    EventUtil.addHandler(document, "mousedown", handleEvent);
+                    EventUtil.addHandler(document, "mousemove", handleEvent);
+                    EventUtil.addHandler(document, "mouseup", handleEvent);
+                },
+                disable: function () {
+                    EventUtil.removeHandler(document, "mousedown", handleEvent);
+                    EventUtil.removeHandler(document, "mousemove", handleEvent);
+                    EventUtil.removeHandler(document, "mouseup", handleEvent);
+                }
+            }
+        }();
+    </script>
+</head>
+
+<body>
+    <div id="myDiv1" class="draggable" style="background:red;width:100px;height:100px;position:absolute"></div>
+    <div id="myDiv2" class="draggable" style="background:blue;width:100px;height:100px;position:absolute;left:100px"></div>
+    <script>
+        DragDrop.enable();
+    </script>
+</body>
+
+</html>

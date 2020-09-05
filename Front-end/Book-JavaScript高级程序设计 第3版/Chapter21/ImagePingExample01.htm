@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var img = new Image();
+        img.onload = img.onerror = function () {
+            console.log("Done!");
+        };
+        img.src = "http://www.example.com/test?name=Nicholas";
+    </script>
+</body>
+
+</html>

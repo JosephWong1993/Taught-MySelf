@@ -1,0 +1,27 @@
+<html>
+
+<body>
+    <script>
+        var age = 29;
+        window.color = "red";
+
+        //  在IE<9时抛出错误,在其他浏览器中都返回false
+        delete window.age;
+
+        //  在IE<9时抛出错误,在其他浏览器中都返回true
+        delete window.color;    //returns true
+
+        console.log(window.age);    //29
+        console.log(window.color);  //undefined
+
+        //  这里不会抛出错误,因为这是一次属性查询
+        //  newValue的值时undefined
+        var newValue = window.oldValue;
+        console.log(newValue);
+
+        //  这里会抛出错误,因为oldValue未定义
+        var newValue = oldValue;
+    </script>
+</body>
+
+</html>

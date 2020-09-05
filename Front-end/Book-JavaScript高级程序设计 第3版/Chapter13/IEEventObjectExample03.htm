@@ -1,0 +1,19 @@
+<html>
+
+<head></head>
+
+<body>
+    <button id="myBtn">Click Me</button>
+    <script>
+        var btn = document.getElementById("myBtn");
+        btn.onclick = function () {
+            console.log("Clicked");
+            window.event.cancelBubble = true;
+        };
+        document.body.onclick = function () {
+            console.log("Body clicked");
+        };
+    </script>
+</body>
+
+</html>

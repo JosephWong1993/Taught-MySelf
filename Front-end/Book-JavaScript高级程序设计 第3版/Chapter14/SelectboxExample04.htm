@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <form>
+        <select name="location" id="selLocation">
+            <option value="Sunnyvale, CA">Sunnyvale</option>
+            <option value="Los Angeles, CA">Los Angeles</option>
+            <option value="Mountain View, CA">Mountain View</option>
+            <option value="">China</option>
+            <option>Australia</option>
+        </select>
+    </form>
+    <script>
+        var selectbox = document.getElementById("selLocation");
+        var newOption = document.createElement("option");
+        newOption.appendChild(document.createTextNode("Option text"));
+        newOption.setAttribute("value", "Option value");
+        selectbox.appendChild(newOption);
+
+        var newOption = new Option("Option text", "Option value");
+        selectbox.add(newOption, undefined);
+    </script>
+</body>
+
+</html>

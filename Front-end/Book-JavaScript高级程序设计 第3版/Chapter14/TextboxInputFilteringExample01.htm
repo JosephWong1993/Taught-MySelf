@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <form>
+        <input type="text" size="25" maxlength="50" name="textbox1" value="initial value">
+    </form>
+    <script src="EventUtil.js"></script>
+    <script>
+        var textbox = document.forms[0].elements["textbox1"];
+        EventUtil.addHandler(textbox, "keypress", function (event) {
+            event = EventUtil.getEvent(event);
+            var target = EventUtil.getTarget(event);
+            var charCode = EventUtil.getCharCode(event);
+
+            if (!/\d/.test(String.fromCharCode(charCode)) && charCode > 9 && !event.ctrlKey) {
+                EventUtil.preventDefault(event);
+            }
+        });
+    </script>
+</body>
+
+</html>

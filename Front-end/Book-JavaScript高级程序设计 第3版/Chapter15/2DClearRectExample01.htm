@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <canvas id="drawing" width="200" height="200">
+        A drawing of something.
+    </canvas>
+    <input type="button" value="Export" id="export-btn">
+    <script>
+        var drawing = document.getElementById("drawing"),
+            btn = document.getElementById("export-btn");
+
+        //  确定浏览器支持<canvas>元素
+        if (drawing.getContext) {
+            var context = drawing.getContext("2d");
+
+            //  绘制红色矩形
+            context.fillStyle = "#ff0000";
+            context.fillRect(10, 10, 50, 50);
+
+            //  绘制半透明的蓝色矩形
+            context.fillStyle = "rgba(0,0,255,0.5)";
+            context.fillRect(30, 30, 50, 50);
+
+            //  在两个矩形重叠的地方清除一个小矩形
+            context.clearRect(40, 40, 10, 10);
+        }
+
+        btn.onclick = function () {
+            //  取得图像的数据URI
+            var imgURI = drawing.toDataURL("image/png");
+
+            //  显示图像
+            var image = document.createElement("img");
+
+            image.src = imgURI;
+            document.body.appendChild(image);
+        }
+    </script>
+</body>
+
+</html>

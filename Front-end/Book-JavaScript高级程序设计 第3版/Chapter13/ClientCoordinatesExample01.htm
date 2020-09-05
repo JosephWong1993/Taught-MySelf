@@ -1,0 +1,17 @@
+<html>
+
+<head></head>
+
+<body>
+    <div id="myDiv" style="background-color:red;height:100px;width:100px">Click me</div>
+    <script src="EventUtil.js"></script>
+    <script>
+        var div = document.getElementById("myDiv");
+        EventUtil.addHandler(div, "click", function (event) {
+            event = EventUtil.getEvent(event);
+            console.log("Client coordinates: " + event.clientX + "," + event.clientY);
+        });
+    </script>
+</body>
+
+</html>

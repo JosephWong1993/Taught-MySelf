@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <input type="text" value="" id="myTextbox" />
+    <script src="EventUtil.js"></script>
+    <script>
+
+        var textbox = document.getElementById("myTextbox"),
+            event;
+
+        EventUtil.addHandler(textbox, "keydown", function (event) {
+            alert(event.type);
+            alert(event.keyCode);
+        });
+
+        //  以DOM3级方式创建事件对象
+        if (document.implementation.hasFeature("KeyboardEvents", "3.0")) {
+            event = document.createEvent("KeyboardEvent");
+
+            //  初始化对象事件
+            event.initKeyboardEvent("keydown", true, true, document.defaultView, "a", 0, "Shift", 0);
+        }
+
+        //  触发事件
+        textbox.dispatchEvent(event);
+    </script>
+</body>
+
+</html>
