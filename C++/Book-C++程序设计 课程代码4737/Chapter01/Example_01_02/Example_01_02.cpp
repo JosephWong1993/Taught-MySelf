@@ -1,3 +1,4 @@
+//函数重载产生多态性的例子
 #include <iostream>
 using namespace std;
 int max(int, int);		//2个整数参数的函数原型
