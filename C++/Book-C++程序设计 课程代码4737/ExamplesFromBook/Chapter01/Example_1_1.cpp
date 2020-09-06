@@ -1,7 +1,6 @@
 /* 功能：将结构对象的两个域值相加，乘以2再加50 */
 #include <iostream>							//包含头文件
 using namespace std;						//使用命名空间
-
 int result(int, int);						//result函数的原型声明
 const int k = 2;							//定义常量
 struct Point {								//定义结构point
@@ -23,13 +22,11 @@ int main()									//主程序
 		<< endl;							//换行
 	return 0;								//主函数main的返回值
 }											//主函数结束
-
-/// <summary>
-/// 函  数：result
-/// </summary>
-/// <param name="a">整形对象 a</param>
-/// <param name="b">整形对象 b</param>
-/// <returns>整形对象</returns>
+// ******************************
+// * 函  数：result				*
+// * 参  数：整形对象 a 和 b		*
+// * 返回值：整形对象			*
+// ******************************
 int result(int a, int b) {
 	return a + b;							// 返回 a + b
 }
