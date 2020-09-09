@@ -1,8 +1,11 @@
+#VS
 .vs
-.vscode
-
-#C++ & C#
 Debug
+bin
+obj
+
+#VSCode
+.vscode
 
 #Front-end
 node_modules
