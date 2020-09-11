@@ -7,5 +7,8 @@ obj
 #VSCode
 .vscode
 
+#IDEA
+out
+
 #Front-end
 node_modules
