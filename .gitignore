@@ -3,6 +3,8 @@
 Debug
 bin
 obj
+*.sdf
+ipch
 
 #VSCode
 .vscode
