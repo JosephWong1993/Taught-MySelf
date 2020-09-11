@@ -19,29 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c98fa96b-9af2-47aa-9026-df8d87efd8a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObserverPattern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/swing/SwingObserverExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/CurrentConditionsDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/DisplayElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/ForecastDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/HeatIndexDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/StatisticsDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/WeatherData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/WeatherStation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/CurrentConditionsDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/DisplayElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/ForecastDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/HeatIndexDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/StatisticsDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/WeatherData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/WeatherStation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
+    <list default="true" id="1d123885-6caa-4473-b718-9f82c0d53cac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="D:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.1\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1hMPHmeikiFXFtRawlrGI11d8Rz" />
+  <component name="ProjectId" id="1hMmbM8gHHnDvFj2jURavfDJQ1b" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -66,10 +39,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.WeatherStation (1)">
-    <configuration name="SwingObserverExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Swing">
+    <configuration name="Swing" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="swing.SwingObserverExample" />
       <module name="ObserverPattern" />
       <extension name="coverage">
@@ -82,20 +54,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeatherStation (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="weatherobserable.WeatherStation" />
-      <module name="ObserverPattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="weatherobserable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WeatherStation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Weather" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="weather.WeatherStation" />
       <module name="ObserverPattern" />
       <extension name="coverage">
@@ -108,22 +67,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WeatherObserable" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="weatherobserable.WeatherStation" />
+      <module name="ObserverPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="weatherobserable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Swing" />
+      <item itemvalue="Application.Weather" />
+      <item itemvalue="Application.WeatherObserable" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WeatherStation (1)" />
-        <item itemvalue="Application.SwingObserverExample" />
-        <item itemvalue="Application.WeatherStation" />
+        <item itemvalue="Application.WeatherObserable" />
+        <item itemvalue="Application.Weather" />
+        <item itemvalue="Application.Swing" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c98fa96b-9af2-47aa-9026-df8d87efd8a2" name="Default Changelist" comment="" />
-      <created>1599817904471</created>
+      <changelist id="1d123885-6caa-4473-b718-9f82c0d53cac" name="Default Changelist" comment="" />
+      <created>1599829406175</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1599817904471</updated>
+      <updated>1599829406175</updated>
     </task>
     <servers />
   </component>
@@ -137,28 +114,27 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1599817912810">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599829549702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1599817912810" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1599818094848">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599829549702" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1599829496242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1599818094848" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1599818094848">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599829496242" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1599829496241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1599818094848" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1599818094848">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599829496241" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1599829496241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1599818094848" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1599818094848">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599829496241" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1599829496241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1599818094848" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599829496241" />
   </component>
 </project>
