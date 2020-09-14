@@ -20,28 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c98fa96b-9af2-47aa-9026-df8d87efd8a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObserverPattern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/swing/SwingObserverExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/CurrentConditionsDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/DisplayElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/ForecastDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/HeatIndexDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/StatisticsDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/WeatherData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather/WeatherStation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/CurrentConditionsDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/DisplayElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/ForecastDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/HeatIndexDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/StatisticsDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/WeatherData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weatherobserable/WeatherStation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
