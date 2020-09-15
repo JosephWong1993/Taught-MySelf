@@ -1,3 +1,4 @@
+/* 演示使用complex和string对象及初始化的例子 */
 #include<iostream>
 #include<complex>
 #include<string>
