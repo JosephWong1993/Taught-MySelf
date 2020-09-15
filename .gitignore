@@ -6,6 +6,7 @@ obj
 ipch
 *.suo
 *.sdf
+*.user
 
 #VSCode
 .vscode
