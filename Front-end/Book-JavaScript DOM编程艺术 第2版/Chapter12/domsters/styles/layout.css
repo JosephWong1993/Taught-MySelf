@@ -80,10 +80,8 @@ article img {
 	background-image: url(../images/basshead.gif);
 }
 
-,
-,
 #live header {
-	background-image: url(../images/bassist.gif));
+	background-image: url(../images/bassist.gif);
 }
 
 #contact header {
@@ -129,10 +127,11 @@ dt {
 dd {
 	float: left;
 }
-label{
+
+label {
 	display: block;
 }
 
-fieldset{
+fieldset {
 	border: 0;
 }
