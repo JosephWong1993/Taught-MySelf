@@ -18,12 +18,12 @@ declare type Vm = Vue & Methods;
 class Props {
   Cards = {
     type: Array,
-    default: () => []
+    default: () => [],
   };
 }
 
 class Methods {
-  handlePlay = function(this: Vm, card) {
+  handlePlay = function (this: Vm, card) {
     let vm = this;
     vm.$emit("card-play", card);
   };
@@ -35,9 +35,9 @@ class Methods {
 
 export default {
   components: {
-    Card
+    Card,
   },
   props: new Props(),
-  methods: new Methods()
+  methods: new Methods(),
 };
 </script>

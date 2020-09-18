@@ -1,5 +1,5 @@
 {
-  "name": "yodoo.atpiao.webpack",
+  "name": "castle_duel",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -34,7 +34,6 @@
     "xml-loader": "^1.2.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
