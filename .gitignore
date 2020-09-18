@@ -12,8 +12,8 @@ ipch
 .vscode
 
 #IDEA
+.idea
 out
 
 #Front-end
 node_modules
-.idea
