@@ -15,5 +15,9 @@ ipch
 .idea
 out
 
+#eclipse
+.metadata
+
 #Front-end
 node_modules
+
