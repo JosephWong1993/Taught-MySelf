@@ -18,9 +18,11 @@ app.use(express.urlencoded({
 }));
 app.use(express.static('./static'));    //静态资源文件处理
 
-app.get('/*', (req, res, next) => {
-    res.send("hello world.\n");
-});
+// app.get('/*', (req, res, next) => {
+//     res.send("hello world.\n");
+// });
+
+app.use('/api/', require('./routers/api'));
 
 app.listen(config.port, () => {
     console.log(`API Server is on ${config.port}...`);

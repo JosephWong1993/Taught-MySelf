@@ -18,13 +18,13 @@ public class Example_02_14 {
 				System.out.print(" *");
 			System.out.print("\n");
 		}
-		space += 4; // 下半部的第一行比下半部的最后一行后移两个位置
+		space += 4; // 下半部的第一行比上半部的最后一行后移两个位置
 		for (j = n - 1; j >= 0; j--, space += 2) {
 			for (int i = 0; i < space; i++)
 				System.out.print(" "); // 输出space个空格符
+			for (k = 1; k <= 2 * j + 1; k++)
+				System.out.print(" *");
+			System.out.print("\n");
 		}
-		for (k = 1; k <= 2 * j + 1; k++)
-			System.out.print(" *");
-		System.out.print("\n");
 	}
 }
