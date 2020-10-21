@@ -1,10 +1,10 @@
 package starbuzz;
 
-// Beverage是一个抽象类，有两个方法：getDescription及cost()
+// Beverage鏄竴涓娊璞＄被锛屾湁涓や釜鏂规硶锛歡etDescription鍙奵ost()
 public abstract class Beverage {
 	String description = "Unknown Beverage";
 
-	// getDescription()已经在此实现了，但是cost()必须在子类中实现
+	// getDescription()宸茬粡鍦ㄦ瀹炵幇浜嗭紝浣嗘槸cost()蹇呴』鍦ㄥ瓙绫讳腑瀹炵幇
 	public String getDescription() {
 		return description;
 	}

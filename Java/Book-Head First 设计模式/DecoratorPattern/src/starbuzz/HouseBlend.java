@@ -1,6 +1,6 @@
 package starbuzz;
 
-// ÕâÊÇÁíÒ»ÖÖÒûÁÏ£¬×ö·¨ºÍEspressoÒ»Ñù£¬Ö»ÊÇ°ÑEspressoÃû³Æ¸ÄÎª"House Blend Coffee"£¬²¢·µ»ØÕıÈ·µÄ¼ÛÇ®$0.89¡£
+// è¿™æ˜¯å¦ä¸€ç§é¥®æ–™ï¼Œåšæ³•å’ŒEspressoä¸€æ ·ï¼Œåªæ˜¯æŠŠEspressoåç§°æ”¹ä¸º"House Blend Coffee"ï¼Œå¹¶è¿”å›æ­£ç¡®çš„ä»·é’±$0.89ã€‚
 public class HouseBlend extends Beverage {
 	public HouseBlend() {
 		description = "House Blend Coffee";

@@ -1,7 +1,7 @@
 package starbuzz;
 
-//Ê×ÏÈ±ØĞëÈÃCondimentDecoratorÄÜ¹»È¡´úBeverage£¬ËùÒÔµÃCondimentDecoratorÀ©Õ¹×ÔBeverageÀà
+//é¦–å…ˆå¿…é¡»è®©CondimentDecoratorèƒ½å¤Ÿå–ä»£Beverageï¼Œæ‰€ä»¥å¾—CondimentDecoratoræ‰©å±•è‡ªBeverageç±»
 public abstract class CondimentDecorator extends Beverage {
-	// ËùÓĞµÄµ÷ÁÏ×°ÊÎÕß¶¼±ØĞëÖØĞÂÊµÏÖgetDescription()·½·¨
+	// æ‰€æœ‰çš„è°ƒæ–™è£…é¥°è€…éƒ½å¿…é¡»é‡æ–°å®ç°getDescription()æ–¹æ³•
 	public abstract String getDescription();
 }

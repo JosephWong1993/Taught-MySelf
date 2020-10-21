@@ -2,17 +2,17 @@ package starbuzz;
 
 public class StarbuzzCoffee {
 	public static void main(String args[]) {
-		// ¶©Ò»±­Espresso£¬²»ĞèÒªµ÷ÁÏ£¬´òÓ¡³öËüµÄÃèÊöºÍ¼ÛÇ®
+		// è®¢ä¸€æ¯Espressoï¼Œä¸éœ€è¦è°ƒæ–™ï¼Œæ‰“å°å‡ºå®ƒçš„æè¿°å’Œä»·é’±
 		Beverage beverage = new Espresso();
 		System.out.println(beverage.getDescription() + " $" + beverage.cost());
 
-		Beverage beverage2 = new DarkRoast(); // ÖÆÔì³öÒ»¸öDarkRoast¶ÔÏó
-		beverage2 = new Mocha(beverage2); // ÓÃMocha×°ÊÎËü
-		beverage2 = new Mocha(beverage2); // ÓÃµÚ¶ş¸öMocha×°ÊÎËü
-		beverage2 = new Whip(beverage2); // ÓÃwhip×°ÊÎËü
+		Beverage beverage2 = new DarkRoast(); // åˆ¶é€ å‡ºä¸€ä¸ªDarkRoastå¯¹è±¡
+		beverage2 = new Mocha(beverage2); // ç”¨Mochaè£…é¥°å®ƒ
+		beverage2 = new Mocha(beverage2); // ç”¨ç¬¬äºŒä¸ªMochaè£…é¥°å®ƒ
+		beverage2 = new Whip(beverage2); // ç”¨whipè£…é¥°å®ƒ
 		System.out.println(beverage2.getDescription() + " $" + beverage2.cost());
 
-		// ×îºó£¬ÔÙÀ´Ò»±­µ÷ÁÏÎª¶¹½¬£¬Ä¦¿¨£¬ÄÌÅİµÄHouseBlend¿§·È
+		// æœ€åï¼Œå†æ¥ä¸€æ¯è°ƒæ–™ä¸ºè±†æµ†ï¼Œæ‘©å¡ï¼Œå¥¶æ³¡çš„HouseBlendå’–å•¡
 		Beverage beverage3 = new HouseBlend();
 		beverage3 = new Soy(beverage3);
 		beverage3 = new Mocha(beverage3);

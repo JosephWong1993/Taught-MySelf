@@ -2,7 +2,7 @@ package io;
 
 import java.io.*;
 
-// Ê×ÏÈ£¬À©Õ¹FileInputStream£¬ÕâÊÇËùÓĞInputStreamµÄ³éÏó×°ÊÎÕß¡£
+// é¦–å…ˆï¼Œæ‰©å±•FileInputStreamï¼Œè¿™æ˜¯æ‰€æœ‰InputStreamçš„æŠ½è±¡è£…é¥°è€…ã€‚
 public class LowerCaseInputStream extends FilterInputStream {
 	public LowerCaseInputStream(InputStream in) {
 		super(in);

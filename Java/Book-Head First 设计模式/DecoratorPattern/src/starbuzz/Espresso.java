@@ -1,14 +1,14 @@
 package starbuzz;
 
-// Ê×ÏÈ£¬ÈÃEspressoÀ©Õ¹×ÔBeverageÀà£¬ÒòÎªEspressoÊÇÒ»ÖÖÒûÁÏ
+// é¦–å…ˆï¼Œè®©Espressoæ‰©å±•è‡ªBeverageç±»ï¼Œå› ä¸ºEspressoæ˜¯ä¸€ç§é¥®æ–™
 public class Espresso extends Beverage {
 	public Espresso() {
-		// ÎªÁËÒªÉèÖÃÒûÁÏµÄÃèÊö£¬ÎÒÃÇĞ´ÁËÒ»¸ö¹¹ÔìÆ÷¡£¼Ç×¡£¬descriptionÊµÀı±äÁ¿¼Ì³Ğ×ÔBeverage¡£
+		// ä¸ºäº†è¦è®¾ç½®é¥®æ–™çš„æè¿°ï¼Œæˆ‘ä»¬å†™äº†ä¸€ä¸ªæ„é€ å™¨ã€‚è®°ä½ï¼Œdescriptionå®ä¾‹å˜é‡ç»§æ‰¿è‡ªBeverageã€‚
 		description = "Espresso";
 	}
 
 	public double cost() {
-		// ×îºó£¬ĞèÒª¼ÆËãEspressoµÄ¼ÛÇ®£¬ÏÖÔÚ²»ĞèÒª¹Üµ÷ÁÏµÄ¼ÛÇ®£¬Ö±½Ó°ÑEspressoµÄ¼Û¸ñ$1.99·µ»Ø¼´¿É
+		// æœ€åï¼Œéœ€è¦è®¡ç®—Espressoçš„ä»·é’±ï¼Œç°åœ¨ä¸éœ€è¦ç®¡è°ƒæ–™çš„ä»·é’±ï¼Œç›´æ¥æŠŠEspressoçš„ä»·æ ¼$1.99è¿”å›å³å¯
 		return 1.99;
 	}
 }
