@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离 注意：使用mapper代理方法开发，namespace有特殊重要的作用 -->
+<mapper namespace="com.mybatis.mapper.OrdersMapperCustom">
+	<!-- 订单查询关联用户的resultMap 将整个查询的结果映射到com.mybatis.po.Orders中 -->
+	<resultMap id="OrdersUserResultMap" type="Orders">
+		<!-- 配置映射的订单信息 -->
+		<!-- id：指定查询列中的唯一标识，订单信息中的唯一标识，如果有多个列组成唯一表示，配置多个id -->
+		<!-- column：订单信息的唯一标识列 -->
+		<!-- property：订单信息的唯一标识列所映射到Orders中哪个属性 -->
+		<id column="id" property="id"></id>
+		<result column="user_id" property="userId"></result>
+		<result column="number" property="number"></result>
+		<result column="createtime" property="createtime"></result>
+		<result column="note" property="note"></result>
+
+		<!-- 配置映射的关联的用户信息 -->
+		<!-- association：用于映射关联查询单个对象的信息 -->
+		<!-- property：要将关联查询的用户信息映射到Orders中哪个属性 -->
+		<association property="user" javaType="User">
+			<!-- id：关联查询用户的唯一标识 -->
+			<!-- javaType：映射到user的哪个属性 -->
+			<id column="user_id" property="id"></id>
+			<result column="username" property="username"></result>
+			<result column="sex" property="sex"></result>
+			<result column="address" property="address"></result>
+		</association>
+	</resultMap>
+
+	<!-- 订单及订单明细的resultMap -->
+	<!-- 使用extends继承，不用在其中配置订单信息和用户信息的映射 -->
+	<resultMap id="OrdersAndOrderDetailResultMap" type="Orders"
+		extends="OrdersUserResultMap">
+		<!-- 订单信息 -->
+		<!-- 用户信息 -->
+		<!-- 使用extends继承，不用在其中配置订单信息和用户信息的映射 -->
+		<!-- 订单明细信息 -->
+		<!-- 一个订单关联查询出了多条明细，要使用collection进行映射 -->
+		<!-- collection：对关联查询到多条记录映射到集合对象中 -->
+		<!-- property：将关联查询到的多条记录映射到Orders中哪个属性 -->
+		<!-- ofType：指定映射到list集合属性中pojo的类型 -->
+		<collection property="orderdetails" ofType="Orderdetail">
+			<!-- id：订单明细唯一标识 -->
+			<!-- property：要将订单明细的唯一标识映射Orderdetail的哪个属性 -->
+			<id column="orderdetail_id" property="id"></id>
+			<result column="items_id" property="itemsId"></result>
+			<result column="items_num" property="itemsNum"></result>
+			<result column="orders_id" property="ordersId"></result>
+		</collection>
+	</resultMap>
+
+	<!-- 查询用户及购买的商品 -->
+	<resultMap id="UserAndItemsResultMap" type="User">
+		<!-- 用户信息 -->
+		<id column="user_id" property="id"></id>
+		<result column="username" property="username"></result>
+		<result column="sex" property="sex"></result>
+		<result column="address" property="address"></result>
+		<!-- 订单信息 -->
+		<!-- 一个用户对应多个订单，使用collection映射 -->
+		<collection property="ordersList" ofType="Orders">
+			<id column="id" property="id"></id>
+			<result column="user_id" property="userId"></result>
+			<result column="number" property="number"></result>
+			<result column="createtime" property="createtime"></result>
+			<result column="note" property="note"></result>
+
+			<!-- 订单明细 -->
+			<!-- 一个订单包括多个明细 -->
+			<collection property="orderdetails" ofType="Orderdetail">
+				<id column="orderdetail_id" property="id"></id>
+				<result column="items_id" property="itemsId"></result>
+				<result column="items_num" property="itemsNum"></result>
+				<result column="orders_id" property="ordersId"></result>
+
+				<!-- 商品信息 -->
+				<!-- 一个订单明细对应一个商品 -->
+				<association property="items" javaType="Items">
+					<id column="items_id" property="id"></id>
+					<result column="items_name" property="name"></result>
+					<result column="items_detail" property="detail"></result>
+					<result column="items_price" property="price"></result>
+				</association>
+			</collection>
+		</collection>
+	</resultMap>
+
+	<!-- 查询订单关联查询用户信息 -->
+	<select id="findOrdersUser" resultType="OrdersCustom">
+		SELECT
+		orders.*,
+		`user`.username,
+		`user`.sex,
+		`user`.address
+		FROM
+		orders
+		INNER JOIN `user`
+		ON orders.user_id = `user`.id
+	</select>
+
+	<!-- 查询订单关联查询用户信息，使用resultMap -->
+	<select id="findOrdersUserResultMap"
+		resultMap="OrdersUserResultMap">
+		SELECT
+		orders.*,
+		`user`.username,
+		`user`.sex,
+		`user`.address
+		FROM
+		orders
+		INNER JOIN `user`
+		ON orders.user_id = `user`.id
+	</select>
+
+	<!-- 查询订单关联查询用户及订单明细，使用resultMap -->
+	<select id="findOrdersAndOrderDetailResultMap"
+		resultMap="OrdersAndOrderDetailResultMap">
+		SELECT
+		orders.*,
+		`user`.username,
+		`user`.sex,
+		`user`.address ,
+		orderdetail.id AS orderdetail_id,
+		orderdetail.items_id,
+		orderdetail.items_num,
+		orderdetail.orders_id
+		FROM
+		orders
+		INNER JOIN `user`
+		ON `user`.id = orders.user_id
+		INNER JOIN
+		orderdetail ON
+		orderdetail.orders_id = orders.id
+	</select>
+
+	<!-- 查询订单关联查询用户及订单明细，使用resultMap -->
+	<select id="findUserAndItemsResultMap"
+		resultMap="UserAndItemsResultMap">
+		SELECT
+		orders.*,
+		`user`.username,
+		`user`.sex,
+		`user`.address,
+		orderdetail.id AS orderdetail_id,
+		orderdetail.items_id,
+		orderdetail.items_num,
+		orderdetail.orders_id,
+		items.`name` AS
+		items_name,
+		items.detail AS items_detail,
+		items.price AS items_price
+		FROM
+		orders
+		INNER JOIN `user` ON `user`.id = orders.user_id
+		INNER JOIN
+		orderdetail ON orderdetail.orders_id = orders.id
+		INNER JOIN items ON
+		items.id = orderdetail.items_id
+	</select>
+	<!-- 延迟加载的resultMap -->
+	<resultMap type="Orders" id="OrdersUserLazyLoadingResultMap">
+		<!-- 对订单信息进行映射配置 -->
+		<id column="id" property="id"></id>
+		<result column="user_id" property="userId"></result>
+		<result column="number" property="number"></result>
+		<result column="createtime" property="createtime"></result>
+		<result column="note" property="note"></result>
+		<!-- 实现对用户信息进行延迟加载 -->
+		<!-- select：指定延迟加载需要执行的statement的id（根据user_id查询用户信息的statement） -->
+		<!-- 使用UserMapper.xml中findUserById完成根据用户id（user_id）用户信息的查询，如果finUserById不在本mapper中需要前边加namespace -->
+		<!-- column：订单信息中关联用户信息查询的列，是user_id -->
+		<association property="user" javaType="User"
+			select="com.mybatis.mapper.UserMapper.findUserById" column="user_id">
+		</association>
+	</resultMap>
+	<!-- 查询订单关联查询用户，用户信息需要延迟加载 -->
+	<select id="findOrdersUserLazyLoading"
+		resultMap="OrdersUserLazyLoadingResultMap">
+		SELECT * FROM orders
+	</select>
+</mapper>

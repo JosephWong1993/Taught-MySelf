@@ -21,3 +21,4 @@ out
 #Front-end
 node_modules
 
+db.properties
