@@ -21,4 +21,5 @@ out
 #Front-end
 node_modules
 
+#mybatis
 db.properties
