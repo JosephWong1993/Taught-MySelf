@@ -8,21 +8,23 @@ ipch
 *.sdf
 *.user
 
+#Front-end
+node_modules
+
 #VSCode
 .vscode
 
+#Java
+out
+db.properties
+
 #IDEA
 .idea
-out
+*.iml
 
 #eclipse
 .metadata
 
-#Front-end
-node_modules
-
-#Java
-db.properties
-
 #Default
 相关资料
+
