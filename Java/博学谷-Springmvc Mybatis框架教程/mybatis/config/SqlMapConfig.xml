@@ -16,6 +16,9 @@
 		<!-- 将积极加载改为消极加载即按需加载 -->
 		<!-- 当设置为‘true’的时候，懒加载的对象可能被任何懒属性全部加载。否则，每个属性都按需加载。 -->
 		<setting name="aggressiveLazyLoading" value="false"></setting>
+		<!-- 开启二级缓存 -->
+		<!-- 对在此配置文件下的所有cache进行全局性开/关设置。 -->
+		<setting name="cacheEnabled" value="true"></setting>
 	</settings>
 	<!-- 别名定义 -->
 	<typeAliases>

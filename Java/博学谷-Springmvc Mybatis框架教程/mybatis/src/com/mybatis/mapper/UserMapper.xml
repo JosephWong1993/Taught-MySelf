@@ -5,6 +5,9 @@
 
 <!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离 注意：使用mapper代理方法开发，namespace有特殊重要的作用 -->
 <mapper namespace="com.mybatis.mapper.UserMapper">
+	<!-- 开启本mapper的namespace下的二级缓存 -->
+	<!-- 指定cache接口的实现类的类型，mybatis默认使用PerpetualCache，要和ehcache整合，需要配置type为ehcache实现cache接口的类型 -->
+	<cache></cache>
 	<!-- 定义sql片段 id：sql片段的唯一标识 经验：是基于单表来定义sql片段，这样的话这个sql片段可重用性才高 在sql片段中不要包括where -->
 	<sql id="query_user_where">
 		<if test="userCustom!=null">
@@ -65,7 +68,8 @@
 	<!-- 通过select执行数据库查询 id：标识映射文件中的sql,称为statement的id 将sql语句封装到mappedStatement对象中,所以将id称为statement的id 
 		parameterType：指定输入参数的类型 #{}表示一个占位符号 #{id}：其中的id表示接入输入的参数，参数名称就是id，如果输入参数是简单类型，#{}中的参数名可以任意 
 		resultType：指定sql输出结果所映射的java对象类型，select指定resultType表示将单条记录映射成的java对象 -->
-	<select id="findUserById" parameterType="int" resultType="user">
+	<select id="findUserById" parameterType="int" resultType="user"
+		useCache="false">
 		SELECT
 		* FROM USER WHERE id=#{value}
 	</select>
@@ -108,8 +112,9 @@
 	</delete>
 	<!-- 更新用户 -->
 	<!-- 分析： 需要传入用户的id 需要传入用户的更新信息 parameterType指定user对象，包括id和更新信息，注意：id必须存在 -->
-	<update id="updateUser" parameterType="user">
-		update user set
+	<update id="updateUser" parameterType="user" flushCache="true">
+		update
+		user set
 		username=#{username},birthday=#{birthday},sex=#{sex},address=#{address}
 		where id=#{id}
 	</update>
