@@ -21,9 +21,11 @@ db.properties
 #IDEA
 .idea
 *.iml
+target
 
 #eclipse
 .metadata
 
 #Default
 相关资料
+
