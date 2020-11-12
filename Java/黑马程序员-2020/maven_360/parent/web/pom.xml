@@ -16,6 +16,14 @@
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
+    <!--定义业务层的依赖 jar-->
+    <dependencies>
+        <dependency>
+            <groupId>com.wong</groupId>
+            <artifactId>service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <!--使用Tomcat插件，定义在这里，只有web项目才能使用-->
