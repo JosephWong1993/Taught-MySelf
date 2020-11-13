@@ -3,20 +3,4 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-    <!-- 配置，自己的Servlet接口实现类的信息 -->
-    <servlet>
-        <!-- 定义名字，理论上可以随意 -->
-        <servlet-name>quickStart</servlet-name>
-        <!-- 配置类的全名 -->
-        <servlet-class>com.itheima.QuickStart</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <!-- 名字，不能随意，必须要和上面的名字相同 -->
-        <servlet-name>quickStart</servlet-name>
-        <!--
-            url互联网访问地址
-            浏览器的访问路径
-        -->
-        <url-pattern>/quick</url-pattern>
-    </servlet-mapping>
 </web-app>
