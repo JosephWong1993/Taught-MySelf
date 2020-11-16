@@ -41,4 +41,22 @@
         <servlet-name>context3</servlet-name>
         <url-pattern>/context3</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>context4</servlet-name>
+        <servlet-class>com.wong.context.Context4Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>context4</servlet-name>
+        <url-pattern>/context4</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>context5</servlet-name>
+        <servlet-class>com.wong.context.Context5Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>context5</servlet-name>
+        <url-pattern>/context5</url-pattern>
+    </servlet-mapping>
 </web-app>
