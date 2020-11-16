@@ -19,18 +19,18 @@ import java.io.IOException;
  */
 public class QuickStart implements Servlet {
     @Override
-    public void init(ServletConfig servletConfig) throws ServletException {
+    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
+        System.out.println("servlet快速入门");
+        servletResponse.getWriter().write("welcome to");
+    }
 
+    @Override
+    public void init(ServletConfig servletConfig) throws ServletException {
     }
 
     @Override
     public ServletConfig getServletConfig() {
         return null;
-    }
-
-    @Override
-    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-
     }
 
     @Override
