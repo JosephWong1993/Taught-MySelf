@@ -8,25 +8,22 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * request请求对象
- * 客户的所有请求数据，都是由此对象来获取
- * 接口 ServletRequest
- * 适合于任何的网络协议，与协议无关的接口
- * 网络协议基本都是HTTP
+ * request对象获取客户端的请求体
+ * 是HTTP协议的一部分
+ * 数据是 k:v的形式
  * <p>
- * 子接口 HttpServletRequest
- * 使用的是子接口HttpServletRequest对象
- * 是Tomcat引擎创建，调用方法的时候传递参数
- * <p>
- * 客户端的请求：
- * 请求行
- * 请求头
- * 请求体
+ * request对象的方法：
+ * String getHeader(String key) 获取请求头信息
+ * getHeaderNames() 获取所有请求头的健
  */
-@WebServlet(urlPatterns = "/request")
-public class RequestServlet extends HttpServlet {
+@WebServlet(urlPatterns = "/requestBody")
+public class RequestBody extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        //获取请求头
+        //User-Agent：值是重要信息 浏览器名字，和操作系统
+        String header = request.getHeader("User-Agent");
+        System.out.println(header);
+        request.getHeaderNames();
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
