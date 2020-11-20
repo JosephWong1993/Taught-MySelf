@@ -20,18 +20,28 @@ import java.io.IOException;
  * 第三次访问的是 /web03/a.jsp
  * 第四次访问的是 /web03/abc/b.jsp
  * 浏览器都携带Cookie数据（请求头有！）
+ * Cookie的数据是在哪个路径下产生的呢：/web03
+ * 凡是访问的是/web03下的任意资源，都携带
  * <p>
  * 演示：
  * 浏览器先访问的是 /web03/abc/pathCookie（请求头有！）
  * 第二次访问的是 /web03/abc/pathCookie（请求头有！）
  * 第三次访问的是 /web03/abc/b.jsp（请求头有！）
  * 第四次访问的是 /web03/a.jsp（请求头没有！）
+ * Cookie的产生路径：/web03/abc
+ * 凡是访问的是/web03/abc下的任意资源，都携带
+ * <p>
+ * 我们开发中，需要的是只要Cookie访问的是/web03就要携带
+ * 不管你是在哪里产生
  */
 @WebServlet(urlPatterns = "/abc/pathCookie")
 public class PathCookieServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         Cookie cookie = new Cookie("path", "cookiePath");
+        //设置Cookie携带路径，只要是/web03就携带
+        //写的是web用于程序名称 request对象方法 getContextPath()
+        cookie.setPath(request.getContextPath());
         response.addCookie(cookie);
     }
     
