@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<beans>
-    <bean id="AccountDao" class="com.wong.dao.impl.AccountDaoImpl"></bean>
-    <bean id="AccountService" class="com.wong.service.impl.AccountServiceImpl"></bean>
-</beans>
