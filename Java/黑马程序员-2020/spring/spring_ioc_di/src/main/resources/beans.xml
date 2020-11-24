@@ -2,28 +2,52 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <!--创建日期对象-->
-    <bean id="myDate" class="java.util.Date"></bean>
     <!--配置accountService对象-->
     <bean id="accountService" class="com.wong.service.impl.AccountServiceImpl">
         <!--采用set方法的方式，进行依赖注入-->
-        <property name="name" value="赵六"></property>
-        <property name="age" value="25"></property>
-        <property name="date" ref="myDate"></property>
-
-        <!--方式一：采用构造方法，进行依赖注入-->
-        <!--<constructor-arg name="name" value="zhang3"></constructor-arg>
-        <constructor-arg name="age" value="20"></constructor-arg>
-        <constructor-arg name="date" ref="myDate"></constructor-arg>-->
-
-        <!--方式二，采用构造方法，进行依赖注入-->
-        <!--<constructor-arg index="0" value="li4"></constructor-arg>
-        <constructor-arg index="1" value="21"></constructor-arg>
-        <constructor-arg index="2" ref="myDate"></constructor-arg>-->
-
-        <!--方式三，采用构造方法，进行依赖注入-->
-        <!--<constructor-arg type="java.lang.String" value="王五"></constructor-arg>
-        <constructor-arg type="java.lang.Integer" value="22"></constructor-arg>
-        <constructor-arg type="java.util.Date" ref="myDate"></constructor-arg>-->
+        <!--字符串数组 依赖注入-->
+        <property name="myStrs">
+            <array>
+                <value>JavaSE</value>
+                <value>JavaWeb</value>
+                <value>SSM</value>
+            </array>
+        </property>
+        <!--List集合 依赖注入-->
+        <property name="myList">
+            <list>
+                <value>JavaSE</value>
+                <value>JavaWeb</value>
+                <value>SSM</value>
+                <value>SSM</value>
+            </list>
+        </property>
+        <!--set集合 依赖注入-->
+        <property name="mySet">
+            <set>
+                <value>JavaSE</value>
+                <value>JavaWeb</value>
+                <value>SSM</value>
+                <value>SSM</value>
+            </set>
+        </property>
+        <!--map集合 依赖注入-->
+        <property name="myMap">
+            <map>
+                <entry key="001" value="JavaSE"></entry>
+                <entry key="002" value="JavaWeb"></entry>
+                <entry key="003" value="SSM"></entry>
+                <entry key="003" value="wong"></entry>
+            </map>
+        </property>
+        <!--props集合 依赖注入-->
+        <property name="myProps">
+            <props>
+                <prop key="001">JavaSE</prop>
+                <prop key="002">JavaWeb</prop>
+                <prop key="003">SSM</prop>
+                <prop key="004">wong</prop>
+            </props>
+        </property>
     </bean>
 </beans>

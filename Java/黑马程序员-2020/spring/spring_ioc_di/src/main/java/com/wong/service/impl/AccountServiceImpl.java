@@ -2,41 +2,54 @@ package com.wong.service.impl;
 
 import com.wong.service.AccountService;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
 
 /**
  * 业务接口实现类
  */
 public class AccountServiceImpl implements AccountService {
+    private String[] myStrs;
     
-    private String name;
+    private List<String> myList;
     
-    private Integer age;
+    private Set<String> mySet;
     
-    private Date date;
+    private Map<String, String> myMap;
     
-    //采用set方法的方式进行依赖注入
-    public void setName(String name) {
-        this.name = name;
+    private Properties myProps;
+    
+    public void setMyStrs(String[] myStrs) {
+        this.myStrs = myStrs;
     }
     
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setMyList(List<String> myList) {
+        this.myList = myList;
     }
     
-    public void setDate(Date date) {
-        this.date = date;
+    public void setMySet(Set<String> mySet) {
+        this.mySet = mySet;
     }
     
-    //采用构造方法的方式进行依赖注入
-   /* public AccountServiceImpl(String name, Integer age, Date date) {
-        this.name = name;
-        this.age = age;
-        this.date = date;
-    }*/
+    public void setMyMap(Map<String, String> myMap) {
+        this.myMap = myMap;
+    }
+    
+    public void setMyProps(Properties myProps) {
+        this.myProps = myProps;
+    }
     
     @Override
     public void save() {
-        System.out.println(name + "====" + age + "====" + date);
+        System.out.println("myStrs == " + Arrays.toString(myStrs));
+        System.out.println("myList = " + myList);
+        System.out.println("mySet = " + mySet);
+        System.out.println("myMap = " + myMap);
+        System.out.println("myProps = " + myProps);
     }
 }
