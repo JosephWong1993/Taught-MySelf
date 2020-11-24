@@ -4,8 +4,6 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import static org.junit.Assert.*;
-
 /**
  * 测试类
  */
@@ -18,6 +16,6 @@ public class AccountServiceTest {
         //获取AccountService对象
         AccountService accountService = (AccountService) applicationContext.getBean("accountService");
         
-        accountService.saveAccount();
+        accountService.save();
     }
 }

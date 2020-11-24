@@ -12,7 +12,7 @@ public class AccountServiceImpl implements AccountService {
     private AccountDao accountDao = new AccountDaoImpl();
     
     @Override
-    public void saveAccount() {
+    public void save() {
         //调用dao层的保存账户的方法
         accountDao.saveAccount();
     }

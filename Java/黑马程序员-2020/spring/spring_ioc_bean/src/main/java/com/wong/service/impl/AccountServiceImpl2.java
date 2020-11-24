@@ -7,7 +7,7 @@ import com.wong.service.AccountService;
 /**
  * 业务接口实现类
  */
-public class AccountServiceImpl implements AccountService {
+public class AccountServiceImpl2 implements AccountService {
     //当前的代码耦合性强
     private AccountDao accountDao = new AccountDaoImpl();
     
