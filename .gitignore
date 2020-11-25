@@ -14,18 +14,5 @@ node_modules
 #VSCode
 .vscode
 
-#Java
-out
-db.properties
-jdbc.properties
-
-#IDEA
-.idea
-*.iml
-target
-
-#eclipse
-.metadata
-
-#Default
+# Other
 相关资料
