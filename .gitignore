@@ -17,6 +17,7 @@ node_modules
 #Java
 out
 db.properties
+jdbc.properties
 
 #IDEA
 .idea
